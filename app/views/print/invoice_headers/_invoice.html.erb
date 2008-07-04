@@ -1,0 +1,38 @@
+<div id="pdf-wrapper">
+  <div>
+    <%= @headerRow.document_title.to_s rescue nil || '' -%><br/>
+    <%= @headerRow.document_number.to_s rescue nil || '' -%><br/>
+    <%= @headerRow.proforma_alert.to_s rescue nil || '' -%><br/>
+    <%= @headerRow.bill_name.to_s rescue nil || '' -%><br/>
+    <%= @headerRow.bill_add1.to_s rescue nil || '' -%><br/>
+    <%= @headerRow.bill_add2.to_s rescue nil || '' -%><br/>
+    <%= @headerRow.bill_add3.to_s rescue nil || '' -%><br/>
+    <%= @headerRow.ship_name.to_s rescue nil || '' -%><br/>
+    <%= @headerRow.ship_add1.to_s rescue nil || '' -%><br/>
+    <%= @headerRow.ship_add2.to_s rescue nil || '' -%><br/>
+    <%= @headerRow.ship_add3.to_s rescue nil || '' -%><br/>
+    <%= @headerRow.invoice.to_s rescue nil || '' -%><br/>
+    <%= @headerRow.date_shipped.to_s rescue nil || '' -%><br/>
+    <%= @headerRow.reference.to_s rescue nil || '' -%><br/>
+    <%= @headerRow.workorder.to_s rescue nil || '' -%><br/>
+    <%= @headerRow.date_ordered.to_s rescue nil || '' -%><br/>
+    <%= @headerRow.terms.to_s rescue nil || '' -%><br/>
+    <%= @headerRow.account.to_s rescue nil || '' -%><br/>
+    <%= @headerRow.ship_via.to_s rescue nil || '' -%><br/>
+    <%= @headerRow.taken_by.to_s rescue nil || '' -%><br/>
+    <%= @headerRow.subtotal_material.to_s rescue nil || '' -%><br/>
+    <%= @headerRow.tax_number.to_s rescue nil || '' -%><br/>
+    <%= @headerRow.invoice_total.to_s rescue nil || '' -%><br/>
+    <%= @headerRow.subtotal_labor.to_s rescue nil || '' -%><br/>
+    <%= @headerRow.tax_amount.to_s rescue nil || '' -%><br/>
+    <%= @headerRow.deposit_type.to_s rescue nil || '' -%><br/>
+    <%= @headerRow.total_deposit_amount.to_s rescue nil || '' -%><br/>
+    <%= @headerRow.subtotal_invoice.to_s rescue nil || '' -%><br/>
+    <%= @headerRow.subtotal_shipping.to_s rescue nil || '' -%><br/>
+    <%= @headerRow.balance_due.to_s rescue nil || '' -%><br/>
+    <%= @headerRow.footnote.to_s rescue nil || '' -%><br/>
+  </div>
+  <div class="page-done">
+    &nbsp;
+  </div>
+</div>

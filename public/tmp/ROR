@@ -1,0 +1,78 @@
+--header
+document-title: INVOICE
+document-number: 219614 
+proforma-alert: 
+bill-name: RICK VERRAN CUSTOM WOODWORKING
+bill-add1: 1431 S.W. 1ST AVE
+bill-add2: Fort Lauderdale, FL 33315         
+bill-add3:                                   
+ship-name: RICK VERRAN CUSTOM WOODWORKING
+ship-add1: 
+ship-add2: 1431 S.W. 1ST AVE                 
+ship-add3: Fort Lauderdale, FL 33315         
+invoice: 219614
+date-shipped: 06/12/2008
+reference: 
+workorder: _________________
+date-ordered: 06/12/2008
+terms: NET 15 DAYS
+account: RIC143
+ship-via: NONE
+taken-by: BR
+page: 1
+--part
+part-ordered: 2.00
+part-shipped: 2.00
+part-number: PLYMDO2SG.75
+part-sku-um: 100272
+part-description: MDO Plywood 3/4" 2SG ****
+part-um: EA
+part-unit-price: 68.11
+part-discount: 3.38
+part-net-price: 65.81
+part-extension: 131.62
+--part
+part-ordered: 2.00
+part-shipped: 2.00
+part-number: PLYMDO2SG.50
+part-sku-um: 100271
+part-description: MDO Plywood 1/2" 2SG ****
+part-um: EA
+part-unit-price: 51.62
+part-discount: 3.37
+part-net-price: 49.88
+part-extension: 99.76
+--part
+part-ordered: 1.00
+part-shipped: 1.00
+part-number: PLYTE2SG.50
+part-sku-um: 100297
+part-description: Teak Plywood 2SG 1/2" A2  ****
+part-um: EA
+part-unit-price: 152.53
+part-discount: 3.38
+part-net-price: 147.38
+part-extension: 147.38
+--part
+part-ordered: 3.80
+part-shipped: 3.80
+part-number: 07200
+part-sku-um: 102309
+part-description: TEAK 4/4-8/4 10"-12"X3'-5-1/2'
+part-um: BF
+part-unit-price: 22.20
+part-discount: 3.38
+part-net-price: 21.45
+part-extension: 81.51
+--total
+subtotal-material: 460.27
+tax-number: 
+invoice-total: 487.89
+subtotal-labor: 0.00
+tax-amount: 27.62
+deposit-type: 
+total-deposit-amount: 0.00
+subtotal-invoice: 460.27
+subtotal-shipping: 0.00
+balance-due: 487.89
+footnote: I have received all materials and the work has been done to specifications requested.

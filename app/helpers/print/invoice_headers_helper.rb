@@ -1,0 +1,2 @@
+module Print::InvoiceHeadersHelper
+end

@@ -1,0 +1,14 @@
+<!DOCTYPE html 
+PUBLIC "-//W3C//Ddiv XHTML 1.0 Strict//EN"
+"Ddiv/xhtml1-strict.ddiv">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title><%= @reportInfo[:title] %></title>
+    <%= stylesheet_link_tag @reportInfo[:cssFile], :media => 'all' %>
+    <%= javascript_include_tag :defaults  %>
+  </head>
+  <body>
+    <%= @content_for_layout %>
+  </body>
+  <%= javascript_include_tag 'aimPrintDb' %>
+</html>

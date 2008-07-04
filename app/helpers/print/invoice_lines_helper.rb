@@ -1,0 +1,2 @@
+module Print::InvoiceLinesHelper
+end
