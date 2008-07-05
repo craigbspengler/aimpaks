@@ -51,6 +51,7 @@ class InvoiceHeader < ActiveRecord::Base
           InvoiceLine.delete_all("invoice_header_id = '#{invoiceHeaderRow.id}'") rescue nil
           InvoiceHeader.delete_all("invoice = '#{@headerRaw[:invoice]}'") rescue nil
         end # of removing residual old invoice.
+        @headerRaw[:workorder].gsub!('_', '')
         headerSaved = InvoiceHeader.create(@headerRaw)
         # the delivery notes and all deposit lines must precede parts, labor, and text.
         %w{ delivery deposit rest}.each do |m|
@@ -70,6 +71,14 @@ class InvoiceHeader < ActiveRecord::Base
     return issue
   end # of method "load_dataflex_invoice".
 
+  def self.company_data(formatCode)
+    {
+      :address => "2619 Southwest Second Avenue, Fort Lauderdale, Florida, 33315-3115\nPhone: 954.463.2577, Fax: 954.463.3846\nE-Mail: info@generalhardwoods.com",
+      :website => "www.generalhardwoods.com",
+      :logo => "ghmi_logo_invoice.gif"
+    }
+  end # of method "company_data".
+  
   private
   
   def self.skip_list

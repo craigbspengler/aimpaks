@@ -1,3 +1,138 @@
-h2 {
+body {
+  position: relative;
+  top: 5mm;
+  font-weight: normal;
+}
+td {
+  padding-left: 5px;
+}
+.form-font {
+  font-family: Architecture, sans-serif;
+  font-size: 10pt;
+}
+.data-font {
+  font-family: "Bitstream Vera Sans Mono", "Courier New", monospace;
+  font-size: 10pt;
+  font-weight: 600;
+}
+.right {
+  text-align: right;
+}
+#company-address {
+  float: left;
+  width: 90mm; height: 27mm;
+  /*  border: 1px solid black; */
+  padding-top: 20px;
+  font-size: 1.2em;
+}
+#company-logo {
+  float: right;
+  width: 98mm; height: 20mm;
+/*  border: 1px solid black; */
+}
+#company-website {
+  clear: right;
+  float: right;
+  width: 98mm; height: 7mm;
+  /*  border: 1px solid black; */
+  padding-top: 0.5em;
+  padding-right: 1.0em;
+  text-align: right;
+  font-size: 1.2em;
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: 0.05em;
+}
+#bill-to-block {
+  position: relative;
+  top: 2mm;
+  clear: both;
+  float: left;
+  width: 90mm; height: 28mm;
+  border: 1px solid black;
+}
+#bill-to-legend {
+  width: 100%; height: 7mm;
+  margin: inherit;
+/*  border-bottom: 1px solid black; */
+  padding-left: 5px;
+}
+#bill-to {
+  width: 100%;
+  padding: 5px;
+  text-align: left;
+}
+#ship-to-block {
+  position: relative;
+  top: 2mm;
+  float: right;
+  width: 98mm; height: 28mm;
+  border: 1px solid black;
+}
+#ship-to-legend {
+  width: 100%; height: 7mm;
+/*  border-bottom: 1px solid black; */
+  padding: 5px;
+}
+#ship-to {
+  width: 100%;
+  padding: 5px;
+  text-align: left;
+}
+#upper {
+  clear: both;
+  position: relative;
+  top: 5mm;
+  width: 100%; height: 24mm;
+  margin: 0;
+  border : 1px solid black;
+/*  border-top: 1px solid black;
+  border-left: 1px solid black; */
+  padding: 0;
+}
+.upper-left {
+  float: left;
+  width: 30%; height: 6mm;
+  margin: 0;
+  border : 1px solid black;
+/*  border-right: 1px solid black;
+  border-bottom: 1px solid black; */
+  padding: 0;
+}
+.upper-center {
+  float: left;
+  width: 30%; height: 6mm;
+  margin: 0;
+  border : 1px solid black;
+/*  border-right: 1px solid black;
+  border-bottom: 1px solid black; */
+  padding: 0;
+}
+.upper-right {
+  float: left;
+  width: 30%; height: 6mm;
+  margin: 0;
+  border : 1px solid black;
+/*  border-right: 1px solid black;
+  border-bottom: 1px solid black; */
+  padding: 0;
+}
+#lower {
+  clear: both;
+  position: relative;
+  top: 5mm;
+  width: 100%; height: 24mm;
+  margin: 0;
+  border : 1px solid black;
+}
+#footer {
+  clear: both;
+  position: relative;
+  top: 5mm;
+  width: 100%;
+  margin: 0;
+  border: 1px solid black;
+  padding: 5px;
   color: red;
+  text-align: center;
 }

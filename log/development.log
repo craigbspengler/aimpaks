@@ -6701,3 +6701,2330 @@ Rendering print/invoice_headers/print_invoice
 Rendered print/invoice_headers/_invoice (0.00000)
 Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
 Completed in 0.17200 (5 reqs/sec) | Rendering: 0.06200 (36%) | DB: 0.25100 (145%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 17:22:10) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;35;1mInvoiceHeader Load (0.000000)[0m   [0mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;36;1mInvoiceHeader Columns (0.172000)[0m   [0;1mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.26600 (3 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.18800 (70%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 17:31:50) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;35;1mInvoiceHeader Load (0.000000)[0m   [0mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;36;1mInvoiceHeader Columns (0.125000)[0m   [0;1mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.23400 (4 reqs/sec) | Rendering: 0.01600 (6%) | DB: 0.12500 (53%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 17:54:15) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;35;1mInvoiceHeader Load (0.000000)[0m   [0mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;36;1mInvoiceHeader Columns (0.203000)[0m   [0;1mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.23500 (4 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.20300 (86%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#index (for 127.0.0.1 at 2008-07-04 17:55:44) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"action"=>"index", "controller"=>"print/invoice_headers"}
+  [4;35;1mInvoiceHeader Load (0.000000)[0m   [0mSELECT * FROM `invoice_headers` [0m
+Rendering template within layouts/application
+Rendering print/invoice_headers/index
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://lb/]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 17:55:46) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.000000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.09400 (10 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 17:56:37) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.016000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.000000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.12500 (8 reqs/sec) | Rendering: 0.03100 (24%) | DB: 0.01600 (12%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 17:59:24) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.204000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.21900 (4 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.20400 (93%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 18:00:20) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.000000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.07800 (12 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01500 (19%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 18:07:06) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.141000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.17200 (5 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.14100 (81%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 18:14:33) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.015000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.063000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.01600)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.15700 (6 reqs/sec) | Rendering: 0.03200 (20%) | DB: 0.07800 (49%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 18:14:44) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.016000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.07800 (12 reqs/sec) | Rendering: 0.01600 (20%) | DB: 0.01600 (20%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 18:19:49) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.016000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.218000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.29700 (3 reqs/sec) | Rendering: 0.01600 (5%) | DB: 0.23400 (78%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 18:26:50) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.141000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.26600 (3 reqs/sec) | Rendering: 0.01600 (6%) | DB: 0.14100 (53%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 18:31:59) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.094000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.18700 (5 reqs/sec) | Rendering: 0.01600 (8%) | DB: 0.09400 (50%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 18:37:27) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.047000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.11000 (9 reqs/sec) | Rendering: 0.01600 (14%) | DB: 0.04700 (42%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 18:39:19) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.000000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.09400 (10 reqs/sec) | Rendering: 0.01600 (17%) | DB: 0.00000 (0%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 18:40:24) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.000000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.06200 (16 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 18:44:34) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.063000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.01600)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.14100 (7 reqs/sec) | Rendering: 0.01600 (11%) | DB: 0.07800 (55%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 19:04:23) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.062000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.01600)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.11000 (9 reqs/sec) | Rendering: 0.01600 (14%) | DB: 0.06200 (56%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 19:05:56) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.015000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.000000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.09300 (10 reqs/sec) | Rendering: 0.01600 (17%) | DB: 0.01500 (16%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 19:06:36) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.000000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.07800 (12 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#index (for 127.0.0.1 at 2008-07-04 19:11:41) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"action"=>"index", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` [0m
+Rendering template within layouts/application
+Rendering print/invoice_headers/index
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://lb/]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 19:11:43) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;35;1mInvoiceHeader Load (0.000000)[0m   [0mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;36;1mInvoiceHeader Columns (0.125000)[0m   [0;1mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.20400 (4 reqs/sec) | Rendering: 0.01600 (7%) | DB: 0.12500 (61%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 19:12:13) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;35;1mInvoiceHeader Load (0.000000)[0m   [0mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;36;1mInvoiceHeader Columns (0.015000)[0m   [0;1mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.01600)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.07800 (12 reqs/sec) | Rendering: 0.01600 (20%) | DB: 0.01500 (19%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 19:14:05) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;35;1mInvoiceHeader Load (0.000000)[0m   [0mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;36;1mInvoiceHeader Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.06200 (16 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 19:37:46) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;35;1mInvoiceHeader Load (0.000000)[0m   [0mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;36;1mInvoiceHeader Columns (0.156000)[0m   [0;1mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.01600)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.18800 (5 reqs/sec) | Rendering: 0.01600 (8%) | DB: 0.15600 (82%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 19:45:42) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;35;1mInvoiceHeader Load (0.000000)[0m   [0mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;36;1mInvoiceHeader Columns (0.109000)[0m   [0;1mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.20300 (4 reqs/sec) | Rendering: 0.03100 (15%) | DB: 0.10900 (53%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#index (for 127.0.0.1 at 2008-07-04 20:37:10) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"action"=>"index", "controller"=>"print/invoice_headers"}
+  [4;35;1mInvoiceHeader Load (0.000000)[0m   [0mSELECT * FROM `invoice_headers` [0m
+Rendering template within layouts/application
+Rendering print/invoice_headers/index
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.01600 (34%) | DB: 0.00000 (0%) | 200 OK [http://lb/]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 20:37:15) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.016000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.093000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.20300 (4 reqs/sec) | Rendering: 0.03100 (15%) | DB: 0.10900 (53%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 20:40:12) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.000000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.20300 (4 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 20:40:50) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.016000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.07800 (12 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (20%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 20:49:26) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.109000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.01600)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.18800 (5 reqs/sec) | Rendering: 0.03100 (16%) | DB: 0.10900 (57%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 20:50:26) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.016000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.000000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.09400 (10 reqs/sec) | Rendering: 0.01500 (15%) | DB: 0.03100 (32%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 20:52:14) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.000000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.07800 (12 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 20:53:38) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.016000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.01500)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.07800 (12 reqs/sec) | Rendering: 0.01500 (19%) | DB: 0.01600 (20%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 21:09:13) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.188000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+
+
+ArgumentError (wrong number of arguments (1 for 0)):
+    /app/controllers/print/invoice_headers_controller.rb:32:in `company_data'
+    /app/controllers/print/invoice_headers_controller.rb:32:in `print_invoice'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:580:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    E:/ruby186-26/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/../lib/mongrel/rails.rb:76:in `process'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/../lib/mongrel/rails.rb:74:in `process'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:282:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:281:in `each'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:281:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/mongrel_rails:128:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/command.rb:212:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/mongrel_rails:281
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering E:/ror2/aimpaks/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 21:09:57) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.016000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.01600)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.09400 (10 reqs/sec) | Rendering: 0.03200 (34%) | DB: 0.20400 (217%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 21:13:22) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.062000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.12500 (8 reqs/sec) | Rendering: 0.01500 (11%) | DB: 0.06200 (49%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 21:14:36) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.016000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.07800 (12 reqs/sec) | Rendering: 0.01600 (20%) | DB: 0.01600 (20%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 21:15:29) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.000000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 21:38:37) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.063000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.14100 (7 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.06300 (44%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 21:39:30) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.000000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.07800 (12 reqs/sec) | Rendering: 0.01600 (20%) | DB: 0.00000 (0%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 21:41:26) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.000000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.07800 (12 reqs/sec) | Rendering: 0.01500 (19%) | DB: 0.00000 (0%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 21:43:43) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.172000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.23400 (4 reqs/sec) | Rendering: 0.01600 (6%) | DB: 0.17200 (73%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 21:45:53) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.016000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.000000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.25000 (4 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (6%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 21:46:22) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.015000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.000000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.07900 (12 reqs/sec) | Rendering: 0.01600 (20%) | DB: 0.01500 (18%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 21:56:45) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.063000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.17200 (5 reqs/sec) | Rendering: 0.01600 (9%) | DB: 0.06300 (36%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-07-04 21:56:46) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/images/images/ghmi_logo_invoice.bmp" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/../lib/mongrel/rails.rb:76:in `process'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/../lib/mongrel/rails.rb:74:in `process'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:282:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:281:in `each'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:281:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/mongrel_rails:128:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/command.rb:212:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/mongrel_rails:281
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering E:/ror2/aimpaks/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 22:00:39) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.016000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.01600)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.07800 (12 reqs/sec) | Rendering: 0.01600 (20%) | DB: 0.01600 (20%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-07-04 22:00:39) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/images/images/ghmi_logo_invoice.gif" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/../lib/mongrel/rails.rb:76:in `process'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/../lib/mongrel/rails.rb:74:in `process'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:282:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:281:in `each'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:281:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/mongrel_rails:128:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/command.rb:212:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/mongrel_rails:281
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering E:/ror2/aimpaks/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 22:02:18) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.015000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.000000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.09300 (10 reqs/sec) | Rendering: 0.01600 (17%) | DB: 0.01500 (16%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 22:04:58) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.000000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.04600 (21 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 22:07:26) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.000000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.07800 (12 reqs/sec) | Rendering: 0.01500 (19%) | DB: 0.00000 (0%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 22:08:29) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.000000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.07800 (12 reqs/sec) | Rendering: 0.01600 (20%) | DB: 0.00000 (0%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 22:09:11) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.016000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.000000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.09400 (10 reqs/sec) | Rendering: 0.03200 (34%) | DB: 0.01600 (17%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 22:10:30) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.015000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.07900 (12 reqs/sec) | Rendering: 0.01600 (20%) | DB: 0.01500 (18%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 22:17:40) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.016000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.172000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.18800 (5 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.18800 (100%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 22:18:43) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.016000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.07800 (12 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.03200 (41%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 22:20:06) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.016000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.01500)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.07800 (12 reqs/sec) | Rendering: 0.01500 (19%) | DB: 0.01600 (20%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 22:22:17) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.015000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.000000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.11000 (9 reqs/sec) | Rendering: 0.03100 (28%) | DB: 0.01500 (13%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 22:23:16) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.000000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.07800 (12 reqs/sec) | Rendering: 0.01600 (20%) | DB: 0.00000 (0%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 22:25:31) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.015000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01500 (48%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 22:26:49) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.016000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.000000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.07800 (12 reqs/sec) | Rendering: 0.01500 (19%) | DB: 0.01600 (20%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 22:27:19) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.016000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.07800 (12 reqs/sec) | Rendering: 0.01600 (20%) | DB: 0.01600 (20%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 22:40:04) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.078000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.10900 (9 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.07800 (71%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 22:44:36) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.031000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.01600)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.11000 (9 reqs/sec) | Rendering: 0.01600 (14%) | DB: 0.03100 (28%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 22:44:52) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.015000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.15600 (6 reqs/sec) | Rendering: 0.01600 (10%) | DB: 0.01500 (9%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 22:46:51) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.000000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.07800 (12 reqs/sec) | Rendering: 0.01500 (19%) | DB: 0.00000 (0%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 22:53:10) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.016000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.07800 (12 reqs/sec) | Rendering: 0.01500 (19%) | DB: 0.01600 (20%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 22:55:19) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.016000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.07800 (12 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.03200 (41%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 22:57:19) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.000000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.07800 (12 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 23:06:51) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.141000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.28100 (3 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.14100 (50%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 23:08:15) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.015000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.07900 (12 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.03000 (37%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 23:19:56) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.156000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.25000 (4 reqs/sec) | Rendering: 0.03100 (12%) | DB: 0.15600 (62%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-04 23:20:53) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.016000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.01600)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.07800 (12 reqs/sec) | Rendering: 0.01600 (20%) | DB: 0.01600 (20%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#index (for 127.0.0.1 at 2008-07-05 00:20:35) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"action"=>"index", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` [0m
+Rendering template within layouts/application
+Rendering print/invoice_headers/index
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://lb/]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-05 00:20:40) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;35;1mInvoiceHeader Load (0.000000)[0m   [0mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;36;1mInvoiceHeader Columns (0.094000)[0m   [0;1mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+
+
+ActionView::TemplateError (undefined method `should_edit?' for #<ActionView::Base:0x45b3cb4>) on line #32 of print/invoice_headers/_invoice.html.erb:
+29:     </div>
+30:   </div>
+31:   <table id="upper" border="1" rules="all">
+32:     <%= build(:rsvfd, @headerRow, :invoice, nil) -%>
+33:     <%= build(:dsvfd, @headerRow, :date_shipped, nil) -%>
+34:     <%= build(:dsvfr, @headerRow, :reference, nil) -%>
+35:     <%= build(:rsvfd, @headerRow, :workorder, nil) -%>
+
+    app/helpers/aim_forms_helper.rb:71:in `build'
+    app/views/print/invoice_headers/_invoice.html.erb:32:in `_run_erb_47app47views47print47invoice_headers47_invoice46html46erb'
+    vendor/rails/actionpack/lib/action_view/base.rb:338:in `send'
+    vendor/rails/actionpack/lib/action_view/base.rb:338:in `execute'
+    vendor/rails/actionpack/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    vendor/rails/actionpack/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    vendor/rails/actionpack/lib/action_view/partial_template.rb:20:in `render'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    vendor/rails/actionpack/lib/action_view/partial_template.rb:19:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:22:in `render_template'
+    vendor/rails/actionpack/lib/action_view/partials.rb:110:in `render_partial'
+    vendor/rails/actionpack/lib/action_view/base.rb:273:in `render'
+    app/views/print/invoice_headers/print_invoice.html.erb:1:in `_run_erb_47app47views47print47invoice_headers47print_invoice46html46erb'
+    vendor/rails/actionpack/lib/action_view/base.rb:338:in `send'
+    vendor/rails/actionpack/lib/action_view/base.rb:338:in `execute'
+    vendor/rails/actionpack/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    vendor/rails/actionpack/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:35:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:22:in `render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:245:in `render_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1108:in `render_for_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:865:in `render_with_no_layout'
+    vendor/rails/actionpack/lib/action_controller/base.rb:880:in `render_with_no_layout'
+    vendor/rails/actionpack/lib/action_controller/layout.rb:251:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:930:in `render_to_string'
+    app/controllers/application.rb:57:in `create_pdf'
+    app/controllers/application.rb:48:in `render_html_or_redirect_to_pdf'
+    app/controllers/print/invoice_headers_controller.rb:34:in `print_invoice'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:580:in `call_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    E:/ruby186-26/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/rails.rb:76:in `process'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/rails.rb:74:in `synchronize'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/rails.rb:74:in `process'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:282:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:281:in `each'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:281:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/mongrel_rails:128:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/command.rb:212:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/mongrel_rails:281
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    vendor/rails/railties/lib/commands/server.rb:39
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering E:/ror2/aimpaks/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-05 00:21:14) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;35;1mInvoiceHeader Load (0.000000)[0m   [0mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;36;1mInvoiceHeader Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+
+
+ActionView::TemplateError ((eval):1:in `build': compile error
+(eval):1: syntax error, unexpected $undefined
+@#<InvoiceHeader:0x471c3a8>
+ ^) on line #32 of print/invoice_headers/_invoice.html.erb:
+29:     </div>
+30:   </div>
+31:   <table id="upper" border="1" rules="all">
+32:     <%= build(:rsvfd, @headerRow, :invoice, nil) -%>
+33:     <%= build(:dsvfd, @headerRow, :date_shipped, nil) -%>
+34:     <%= build(:dsvfr, @headerRow, :reference, nil) -%>
+35:     <%= build(:rsvfd, @headerRow, :workorder, nil) -%>
+
+    app/helpers/aim_forms_helper.rb:95:in `build'
+    app/views/print/invoice_headers/_invoice.html.erb:32:in `eval'
+    app/helpers/aim_forms_helper.rb:95:in `build'
+    app/views/print/invoice_headers/_invoice.html.erb:32:in `_run_erb_47app47views47print47invoice_headers47_invoice46html46erb'
+    vendor/rails/actionpack/lib/action_view/base.rb:338:in `send'
+    vendor/rails/actionpack/lib/action_view/base.rb:338:in `execute'
+    vendor/rails/actionpack/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    vendor/rails/actionpack/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    vendor/rails/actionpack/lib/action_view/partial_template.rb:20:in `render'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    vendor/rails/actionpack/lib/action_view/partial_template.rb:19:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:22:in `render_template'
+    vendor/rails/actionpack/lib/action_view/partials.rb:110:in `render_partial'
+    vendor/rails/actionpack/lib/action_view/base.rb:273:in `render'
+    app/views/print/invoice_headers/print_invoice.html.erb:1:in `_run_erb_47app47views47print47invoice_headers47print_invoice46html46erb'
+    vendor/rails/actionpack/lib/action_view/base.rb:338:in `send'
+    vendor/rails/actionpack/lib/action_view/base.rb:338:in `execute'
+    vendor/rails/actionpack/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    vendor/rails/actionpack/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:35:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:22:in `render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:245:in `render_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1108:in `render_for_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:865:in `render_with_no_layout'
+    vendor/rails/actionpack/lib/action_controller/base.rb:880:in `render_with_no_layout'
+    vendor/rails/actionpack/lib/action_controller/layout.rb:251:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:930:in `render_to_string'
+    app/controllers/application.rb:57:in `create_pdf'
+    app/controllers/application.rb:48:in `render_html_or_redirect_to_pdf'
+    app/controllers/print/invoice_headers_controller.rb:34:in `print_invoice'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:580:in `call_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    E:/ruby186-26/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/rails.rb:76:in `process'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/rails.rb:74:in `synchronize'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/rails.rb:74:in `process'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:282:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:281:in `each'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:281:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/mongrel_rails:128:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/command.rb:212:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/mongrel_rails:281
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    vendor/rails/railties/lib/commands/server.rb:39
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering E:/ror2/aimpaks/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-05 00:22:35) [GET]
+  Session ID: 6550677a754152cee13444f79302b6a6
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;35;1mInvoiceHeader Load (0.000000)[0m   [0mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;36;1mInvoiceHeader Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.04600 (21 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#index (for 127.0.0.1 at 2008-07-05 10:16:30) [GET]
+  Session ID: bdfb7e34f92c8ee5929b191b8575ec0d
+  Parameters: {"action"=>"index", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` [0m
+Rendering template within layouts/application
+Rendering print/invoice_headers/index
+Completed in 0.06200 (16 reqs/sec) | Rendering: 0.01500 (24%) | DB: 0.14100 (227%) | 200 OK [http://lb/]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-05 10:17:51) [GET]
+  Session ID: bdfb7e34f92c8ee5929b191b8575ec0d
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;35;1mInvoiceHeader Load (0.015000)[0m   [0mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;36;1mInvoiceHeader Columns (0.110000)[0m   [0;1mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.04700)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.21900 (4 reqs/sec) | Rendering: 0.06200 (28%) | DB: 0.43800 (199%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-05 10:34:36) [GET]
+  Session ID: bdfb7e34f92c8ee5929b191b8575ec0d
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;35;1mInvoiceHeader Load (0.016000)[0m   [0mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;36;1mInvoiceHeader Columns (0.093000)[0m   [0;1mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+
+
+ActionView::TemplateError (private method `chomp' called for #<Array:0x4888660>) on line #25 of print/invoice_headers/_invoice.html.erb:
+22:   <div id="ship-to-block">
+23:     <span id="ship-to-legend" class="form-font">SHIP TO:</span>
+24:     <div id="ship-to" class="data-font">
+25:       <%= collapse_address(@headerRow, 'ship') -%>
+26:     </div>
+27:   </div>
+28:   <table id="upper" border="1" rules="all">
+
+    app/helpers/aim_forms_helper.rb:269:in `collapse_address'
+    app/views/print/invoice_headers/_invoice.html.erb:25:in `_run_erb_47app47views47print47invoice_headers47_invoice46html46erb'
+    vendor/rails/actionpack/lib/action_view/base.rb:338:in `send'
+    vendor/rails/actionpack/lib/action_view/base.rb:338:in `execute'
+    vendor/rails/actionpack/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    vendor/rails/actionpack/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    vendor/rails/actionpack/lib/action_view/partial_template.rb:20:in `render'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    vendor/rails/actionpack/lib/action_view/partial_template.rb:19:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:22:in `render_template'
+    vendor/rails/actionpack/lib/action_view/partials.rb:110:in `render_partial'
+    vendor/rails/actionpack/lib/action_view/base.rb:273:in `render'
+    app/views/print/invoice_headers/print_invoice.html.erb:1:in `_run_erb_47app47views47print47invoice_headers47print_invoice46html46erb'
+    vendor/rails/actionpack/lib/action_view/base.rb:338:in `send'
+    vendor/rails/actionpack/lib/action_view/base.rb:338:in `execute'
+    vendor/rails/actionpack/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    vendor/rails/actionpack/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:35:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:22:in `render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:245:in `render_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1108:in `render_for_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:865:in `render_with_no_layout'
+    vendor/rails/actionpack/lib/action_controller/base.rb:880:in `render_with_no_layout'
+    vendor/rails/actionpack/lib/action_controller/layout.rb:251:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:930:in `render_to_string'
+    app/controllers/application.rb:57:in `create_pdf'
+    app/controllers/application.rb:48:in `render_html_or_redirect_to_pdf'
+    app/controllers/print/invoice_headers_controller.rb:34:in `print_invoice'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:580:in `call_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    E:/ruby186-26/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/rails.rb:76:in `process'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/rails.rb:74:in `synchronize'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/rails.rb:74:in `process'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:282:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:281:in `each'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:281:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/mongrel_rails:128:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/command.rb:212:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/mongrel_rails:281
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    vendor/rails/railties/lib/commands/server.rb:39
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering E:/ror2/aimpaks/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-05 10:39:15) [GET]
+  Session ID: bdfb7e34f92c8ee5929b191b8575ec0d
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;35;1mInvoiceHeader Load (0.000000)[0m   [0mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;36;1mInvoiceHeader Columns (0.109000)[0m   [0;1mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.01600)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.17100 (5 reqs/sec) | Rendering: 0.03100 (18%) | DB: 0.10900 (63%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-05 10:41:28) [GET]
+  Session ID: bdfb7e34f92c8ee5929b191b8575ec0d
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;35;1mInvoiceHeader Load (0.000000)[0m   [0mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;36;1mInvoiceHeader Columns (0.125000)[0m   [0;1mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.07800)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.23500 (4 reqs/sec) | Rendering: 0.07800 (33%) | DB: 0.12500 (53%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-05 10:42:48) [GET]
+  Session ID: bdfb7e34f92c8ee5929b191b8575ec0d
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;35;1mInvoiceHeader Load (0.015000)[0m   [0mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;36;1mInvoiceHeader Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.09400 (10 reqs/sec) | Rendering: 0.01500 (15%) | DB: 0.01500 (15%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-05 10:43:56) [GET]
+  Session ID: bdfb7e34f92c8ee5929b191b8575ec0d
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;35;1mInvoiceHeader Load (0.000000)[0m   [0mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;36;1mInvoiceHeader Columns (0.015000)[0m   [0;1mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.01600)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.07800 (12 reqs/sec) | Rendering: 0.01600 (20%) | DB: 0.01500 (19%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-05 10:44:37) [GET]
+  Session ID: bdfb7e34f92c8ee5929b191b8575ec0d
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;35;1mInvoiceHeader Load (0.000000)[0m   [0mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;36;1mInvoiceHeader Columns (0.015000)[0m   [0;1mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.06300 (15 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01500 (23%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-05 10:46:31) [GET]
+  Session ID: bdfb7e34f92c8ee5929b191b8575ec0d
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;35;1mInvoiceHeader Load (0.000000)[0m   [0mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;36;1mInvoiceHeader Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.07800 (12 reqs/sec) | Rendering: 0.01500 (19%) | DB: 0.00000 (0%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-05 10:47:35) [GET]
+  Session ID: bdfb7e34f92c8ee5929b191b8575ec0d
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;35;1mInvoiceHeader Load (0.000000)[0m   [0mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;36;1mInvoiceHeader Columns (0.016000)[0m   [0;1mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.03200 (31 reqs/sec) | Rendering: 0.01600 (50%) | DB: 0.01600 (50%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-05 10:48:53) [GET]
+  Session ID: bdfb7e34f92c8ee5929b191b8575ec0d
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;35;1mInvoiceHeader Load (0.015000)[0m   [0mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;36;1mInvoiceHeader Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.07800 (12 reqs/sec) | Rendering: 0.01600 (20%) | DB: 0.01500 (19%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-05 10:49:20) [GET]
+  Session ID: bdfb7e34f92c8ee5929b191b8575ec0d
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;35;1mInvoiceHeader Load (0.000000)[0m   [0mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;36;1mInvoiceHeader Columns (0.016000)[0m   [0;1mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.01600)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.07800 (12 reqs/sec) | Rendering: 0.01600 (20%) | DB: 0.01600 (20%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#index (for 127.0.0.1 at 2008-07-05 12:12:44) [GET]
+  Session ID: bdfb7e34f92c8ee5929b191b8575ec0d
+  Parameters: {"action"=>"index", "controller"=>"print/invoice_headers"}
+  [4;35;1mInvoiceHeader Load (0.000000)[0m   [0mSELECT * FROM `invoice_headers` [0m
+Rendering template within layouts/application
+Rendering print/invoice_headers/index
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://lb/]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-05 12:12:48) [GET]
+  Session ID: bdfb7e34f92c8ee5929b191b8575ec0d
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.094000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+
+
+ActionView::TemplateError (undefined method `build' for #<ActionView::Base:0x458ac60>) on line #29 of print/invoice_headers/_invoice.html.erb:
+26:     </div>
+27:   </div>
+28:   <table id="upper" border="1" rules="all">
+29:     <%= build(:rsvfd, :headerRow, :invoice, nil) -%>
+30:     <%= build(:dsvfd, :headerRow, :date_shipped, nil) -%>
+31:     <%= build(:dsvfr, :headerRow, :reference, nil) -%>
+32:     <%= build(:rsvfd, :headerRow, :workorder, nil) -%>
+
+    app/views/print/invoice_headers/_invoice.html.erb:29:in `_run_erb_47app47views47print47invoice_headers47_invoice46html46erb'
+    vendor/rails/actionpack/lib/action_view/base.rb:338:in `send'
+    vendor/rails/actionpack/lib/action_view/base.rb:338:in `execute'
+    vendor/rails/actionpack/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    vendor/rails/actionpack/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    vendor/rails/actionpack/lib/action_view/partial_template.rb:20:in `render'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    vendor/rails/actionpack/lib/action_view/partial_template.rb:19:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:22:in `render_template'
+    vendor/rails/actionpack/lib/action_view/partials.rb:110:in `render_partial'
+    vendor/rails/actionpack/lib/action_view/base.rb:273:in `render'
+    app/views/print/invoice_headers/print_invoice.html.erb:1:in `_run_erb_47app47views47print47invoice_headers47print_invoice46html46erb'
+    vendor/rails/actionpack/lib/action_view/base.rb:338:in `send'
+    vendor/rails/actionpack/lib/action_view/base.rb:338:in `execute'
+    vendor/rails/actionpack/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    vendor/rails/actionpack/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:35:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:22:in `render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:245:in `render_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1108:in `render_for_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:865:in `render_with_no_layout'
+    vendor/rails/actionpack/lib/action_controller/base.rb:880:in `render_with_no_layout'
+    vendor/rails/actionpack/lib/action_controller/layout.rb:251:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:930:in `render_to_string'
+    app/controllers/application.rb:57:in `create_pdf'
+    app/controllers/application.rb:48:in `render_html_or_redirect_to_pdf'
+    app/controllers/print/invoice_headers_controller.rb:34:in `print_invoice'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:580:in `call_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    E:/ruby186-26/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/rails.rb:76:in `process'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/rails.rb:74:in `synchronize'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/rails.rb:74:in `process'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:282:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:281:in `each'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:281:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/mongrel_rails:128:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/command.rb:212:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/mongrel_rails:281
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    vendor/rails/railties/lib/commands/server.rb:39
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering E:/ror2/aimpaks/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-05 12:13:09) [GET]
+  Session ID: bdfb7e34f92c8ee5929b191b8575ec0d
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.015000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.000000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.03100 (100%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-05 12:16:11) [GET]
+  Session ID: bdfb7e34f92c8ee5929b191b8575ec0d
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.015000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.000000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.10900 (9 reqs/sec) | Rendering: 0.01500 (13%) | DB: 0.01500 (13%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-05 12:17:39) [GET]
+  Session ID: bdfb7e34f92c8ee5929b191b8575ec0d
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.000000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.09400 (10 reqs/sec) | Rendering: 0.03100 (32%) | DB: 0.01600 (17%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-05 12:19:26) [GET]
+  Session ID: bdfb7e34f92c8ee5929b191b8575ec0d
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.000000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.01600)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.06200 (16 reqs/sec) | Rendering: 0.01600 (25%) | DB: 0.00000 (0%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-05 12:37:46) [GET]
+  Session ID: bdfb7e34f92c8ee5929b191b8575ec0d
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.078000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.01600)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.15700 (6 reqs/sec) | Rendering: 0.01600 (10%) | DB: 0.07800 (49%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-05 12:38:52) [GET]
+  Session ID: bdfb7e34f92c8ee5929b191b8575ec0d
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.016000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.01600)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.10900 (9 reqs/sec) | Rendering: 0.03100 (28%) | DB: 0.01600 (14%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-05 12:45:00) [GET]
+  Session ID: bdfb7e34f92c8ee5929b191b8575ec0d
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.078000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.01500)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.10900 (9 reqs/sec) | Rendering: 0.01500 (13%) | DB: 0.07800 (71%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-05 12:47:12) [GET]
+  Session ID: bdfb7e34f92c8ee5929b191b8575ec0d
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.046000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.07800 (12 reqs/sec) | Rendering: 0.01600 (20%) | DB: 0.04600 (58%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-05 12:49:09) [GET]
+  Session ID: bdfb7e34f92c8ee5929b191b8575ec0d
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.016000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.09400 (10 reqs/sec) | Rendering: 0.01600 (17%) | DB: 0.01600 (17%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-05 13:16:37) [GET]
+  Session ID: bdfb7e34f92c8ee5929b191b8575ec0d
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.063000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.14100 (7 reqs/sec) | Rendering: 0.01600 (11%) | DB: 0.06300 (44%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#load_invoice (for 127.0.0.1 at 2008-07-05 13:20:06) [POST]
+  Session ID: bdfb7e34f92c8ee5929b191b8575ec0d
+  Parameters: {"commit"=>"Go", "action"=>"load_invoice", "controller"=>"print/invoice_headers", "fileNamr"=>"ROR"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` WHERE (invoice = '219614') LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.156000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+  [4;36;1mInvoiceLine Delete all (0.250000)[0m   [0;1mDELETE FROM `invoice_lines` WHERE (invoice_header_id = '1') [0m
+  [4;35;1mInvoiceHeader Delete all (0.047000)[0m   [0mDELETE FROM `invoice_headers` WHERE (invoice = '219614') [0m
+
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+    /app/models/invoice_header.rb:54:in `load_dataflex_invoice'
+    /app/controllers/print/invoice_headers_controller.rb:10:in `load_invoice'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:580:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    E:/ruby186-26/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/../lib/mongrel/rails.rb:76:in `process'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/../lib/mongrel/rails.rb:74:in `process'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:282:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:281:in `each'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:281:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/mongrel_rails:128:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/command.rb:212:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/mongrel_rails:281
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering E:/ror2/aimpaks/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing InvoiceHeadersController#load_invoice (for 127.0.0.1 at 2008-07-05 13:20:58) [POST]
+  Session ID: bdfb7e34f92c8ee5929b191b8575ec0d
+  Parameters: {"commit"=>"Go", "action"=>"load_invoice", "controller"=>"print/invoice_headers", "fileNamr"=>"ROR"}
+  [4;36;1mInvoiceHeader Load (0.016000)[0m   [0;1mSELECT * FROM `invoice_headers` WHERE (invoice = '219614') LIMIT 1[0m
+  [4;35;1mInvoiceHeader Columns (0.000000)[0m   [0mSHOW FIELDS FROM `invoice_headers`[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mInvoiceHeader Create (0.000000)[0m   [0mINSERT INTO `invoice_headers` (`reference`, `workorder`, `tax_number`, `footnote`, `updated_at`, `ship_add1`, `document_title`, `proforma_alert`, `ship_add2`, `invoice`, `account`, `subtotal_material`, `format_code`, `ship_name`, `ship_add3`, `subtotal_labor`, `ship_via`, `taken_by`, `tax_amount`, `deposit_type`, `document_number`, `date_shipped`, `balance_due`, `bill_name`, `terms`, `invoice_total`, `subtotal_invoice`, `bill_add1`, `bill_add2`, `total_deposit_amount`, `subtotal_shipping`, `created_at`, `bill_add3`, `date_ordered`) VALUES('', '', '', 'I have received all materials and the work has been done to specifications requested.', '2008-07-05 17:20:58', '', 'INVOICE', '', '1431 S.W. 1ST AVE', '219614', 'RIC143', '460.27', '', 'RICK VERRAN CUSTOM WOODWORKING', 'Fort Lauderdale, FL 33315', '0.0', 'NONE', 'BR', '27.62', '', '219614', '2008-06-12', '487.89', 'RICK VERRAN CUSTOM WOODWORKING', 'NET 15 DAYS', '487.89', '460.27', '1431 S.W. 1ST AVE', 'Fort Lauderdale, FL 33315', '0.0', '0.0', '2008-07-05 17:20:58', '', '2008-06-12')[0m
+  [4;36;1mSQL (0.218000)[0m   [0;1mCOMMIT[0m
+  [4;35;1mInvoiceLine Columns (0.000000)[0m   [0mSHOW FIELDS FROM `invoice_lines`[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mInvoiceLine Load (0.000000)[0m   [0mSELECT * FROM `invoice_lines` WHERE (invoice_header_id = 2) ORDER BY position DESC LIMIT 1[0m
+  [4;36;1mInvoiceLine Create (0.000000)[0m   [0;1mINSERT INTO `invoice_lines` (`updated_at`, `part_extension`, `labor_ordered`, `part_discount`, `delivery_area_code`, `delivery_number`, `delivery_special0`, `deposit_received`, `delivery_special1`, `labor_sku`, `part_unit_price`, `invoice_header_id`, `part_ordered`, `part_sku_um`, `deposit_source`, `line_mode`, `part_shipped`, `delivery_exchange`, `deposit_amount`, `labor_unit_price`, `part_um`, `labor_shipped`, `position`, `part_description`, `part_net_price`, `labor_discount`, `labor_extension`, `created_at`, `part_number`, `delivery_contact`, `labor_unit_list`, `body_text`) VALUES('2008-07-05 17:20:58', '131.62', '0.0', '3.38', '', '', '', NULL, '', '', '68.11', 2, '2.0', '100272', '', 'part', '2.0', '', '0.0', '0.0', 'EA', '0.0', 1, 'MDO Plywood 3/4\" 2SG ****', '65.81', '0.0', '0.0', '2008-07-05 17:20:58', 'PLYMDO2SG.75', '', '0.0', '')[0m
+  [4;35;1mSQL (0.078000)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mInvoiceLine Load (0.015000)[0m   [0mSELECT * FROM `invoice_lines` WHERE (invoice_header_id = 2) ORDER BY position DESC LIMIT 1[0m
+  [4;36;1mInvoiceLine Create (0.000000)[0m   [0;1mINSERT INTO `invoice_lines` (`updated_at`, `part_extension`, `labor_ordered`, `part_discount`, `delivery_area_code`, `delivery_number`, `delivery_special0`, `deposit_received`, `delivery_special1`, `labor_sku`, `part_unit_price`, `invoice_header_id`, `part_ordered`, `part_sku_um`, `deposit_source`, `line_mode`, `part_shipped`, `delivery_exchange`, `deposit_amount`, `labor_unit_price`, `part_um`, `labor_shipped`, `position`, `part_description`, `part_net_price`, `labor_discount`, `labor_extension`, `created_at`, `part_number`, `delivery_contact`, `labor_unit_list`, `body_text`) VALUES('2008-07-05 17:20:58', '99.76', '0.0', '3.37', '', '', '', NULL, '', '', '51.62', 2, '2.0', '100271', '', 'part', '2.0', '', '0.0', '0.0', 'EA', '0.0', 2, 'MDO Plywood 1/2\" 2SG ****', '49.88', '0.0', '0.0', '2008-07-05 17:20:58', 'PLYMDO2SG.50', '', '0.0', '')[0m
+  [4;35;1mSQL (0.079000)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mInvoiceLine Load (0.000000)[0m   [0mSELECT * FROM `invoice_lines` WHERE (invoice_header_id = 2) ORDER BY position DESC LIMIT 1[0m
+  [4;36;1mInvoiceLine Create (0.000000)[0m   [0;1mINSERT INTO `invoice_lines` (`updated_at`, `part_extension`, `labor_ordered`, `part_discount`, `delivery_area_code`, `delivery_number`, `delivery_special0`, `deposit_received`, `delivery_special1`, `labor_sku`, `part_unit_price`, `invoice_header_id`, `part_ordered`, `part_sku_um`, `deposit_source`, `line_mode`, `part_shipped`, `delivery_exchange`, `deposit_amount`, `labor_unit_price`, `part_um`, `labor_shipped`, `position`, `part_description`, `part_net_price`, `labor_discount`, `labor_extension`, `created_at`, `part_number`, `delivery_contact`, `labor_unit_list`, `body_text`) VALUES('2008-07-05 17:20:58', '147.38', '0.0', '3.38', '', '', '', NULL, '', '', '152.53', 2, '1.0', '100297', '', 'part', '1.0', '', '0.0', '0.0', 'EA', '0.0', 3, 'Teak Plywood 2SG 1/2\" A2 ****', '147.38', '0.0', '0.0', '2008-07-05 17:20:58', 'PLYTE2SG.50', '', '0.0', '')[0m
+  [4;35;1mSQL (0.094000)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mInvoiceLine Load (0.000000)[0m   [0mSELECT * FROM `invoice_lines` WHERE (invoice_header_id = 2) ORDER BY position DESC LIMIT 1[0m
+  [4;36;1mInvoiceLine Create (0.000000)[0m   [0;1mINSERT INTO `invoice_lines` (`updated_at`, `part_extension`, `labor_ordered`, `part_discount`, `delivery_area_code`, `delivery_number`, `delivery_special0`, `deposit_received`, `delivery_special1`, `labor_sku`, `part_unit_price`, `invoice_header_id`, `part_ordered`, `part_sku_um`, `deposit_source`, `line_mode`, `part_shipped`, `delivery_exchange`, `deposit_amount`, `labor_unit_price`, `part_um`, `labor_shipped`, `position`, `part_description`, `part_net_price`, `labor_discount`, `labor_extension`, `created_at`, `part_number`, `delivery_contact`, `labor_unit_list`, `body_text`) VALUES('2008-07-05 17:20:59', '81.51', '0.0', '3.38', '', '', '', NULL, '', '', '22.2', 2, '3.8', '102309', '', 'part', '3.8', '', '0.0', '0.0', 'BF', '0.0', 4, 'TEAK 4/4-8/4 10\"-12\"X3\'-5-1/2\'', '21.45', '0.0', '0.0', '2008-07-05 17:20:59', '07200', '', '0.0', '')[0m
+  [4;35;1mSQL (0.094000)[0m   [0mCOMMIT[0m
+Redirected to http://lb:3000/
+Completed in 0.81300 (1 reqs/sec) | DB: 1.04700 (128%) | 302 Found [http://lb/print/invoice_headers/load_invoice]
+
+
+Processing InvoiceHeadersController#index (for 127.0.0.1 at 2008-07-05 13:20:59) [GET]
+  Session ID: bdfb7e34f92c8ee5929b191b8575ec0d
+  Parameters: {"action"=>"index", "controller"=>"print/invoice_headers"}
+  [4;36;1mInvoiceHeader Load (0.000000)[0m   [0;1mSELECT * FROM `invoice_headers` [0m
+Rendering template within layouts/application
+Rendering print/invoice_headers/index
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.01600 (34%) | DB: 0.09300 (197%) | 200 OK [http://lb/]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-05 13:21:07) [GET]
+  Session ID: bdfb7e34f92c8ee5929b191b8575ec0d
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;35;1mInvoiceHeader Load (0.000000)[0m   [0mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;36;1mInvoiceHeader Columns (0.016000)[0m   [0;1mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.01600)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.09400 (10 reqs/sec) | Rendering: 0.01600 (17%) | DB: 0.07800 (82%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-05 13:30:01) [GET]
+  Session ID: bdfb7e34f92c8ee5929b191b8575ec0d
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;35;1mInvoiceHeader Load (0.015000)[0m   [0mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;36;1mInvoiceHeader Columns (0.078000)[0m   [0;1mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.01600)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.15700 (6 reqs/sec) | Rendering: 0.01600 (10%) | DB: 0.32800 (208%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mInvoiceHeader Load (0.000000)[0m   [0mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;36;1mInvoiceHeader Columns (0.062000)[0m   [0;1mSHOW FIELDS FROM `invoice_headers`[0m
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-05 13:43:58) [GET]
+  Session ID: bdfb7e34f92c8ee5929b191b8575ec0d
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;35;1mInvoiceHeader Load (0.000000)[0m   [0mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;36;1mInvoiceHeader Columns (0.094000)[0m   [0;1mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+
+
+ActionView::TemplateError (wrong number of arguments (1 for 2)) on line #29 of print/invoice_headers/_invoice.html.erb:
+26:     </div>
+27:   </div>
+28:   <table id="upper" border="1" rules="all">
+29:     <%= aim_build(:rssfd, :headerRow, :invoice, ':') -%>
+30:     <%= aim_build(:dssfd, :headerRow, :date_shipped, ':') -%>
+31:     <%= aim_build(:dssfr, :headerRow, :reference, ':') -%>
+32:     <%= aim_build(:rssfd, :headerRow, :workorder, ':') -%>
+
+    app/helpers/aim_forms_helper.rb:106:in `evaluate_text_field'
+    app/helpers/aim_forms_helper.rb:106:in `aim_build'
+    app/views/print/invoice_headers/_invoice.html.erb:29:in `_run_erb_47app47views47print47invoice_headers47_invoice46html46erb'
+    vendor/rails/actionpack/lib/action_view/base.rb:338:in `send'
+    vendor/rails/actionpack/lib/action_view/base.rb:338:in `execute'
+    vendor/rails/actionpack/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    vendor/rails/actionpack/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    vendor/rails/actionpack/lib/action_view/partial_template.rb:20:in `render'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    vendor/rails/actionpack/lib/action_view/partial_template.rb:19:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:22:in `render_template'
+    vendor/rails/actionpack/lib/action_view/partials.rb:110:in `render_partial'
+    vendor/rails/actionpack/lib/action_view/base.rb:273:in `render'
+    app/views/print/invoice_headers/print_invoice.html.erb:1:in `_run_erb_47app47views47print47invoice_headers47print_invoice46html46erb'
+    vendor/rails/actionpack/lib/action_view/base.rb:338:in `send'
+    vendor/rails/actionpack/lib/action_view/base.rb:338:in `execute'
+    vendor/rails/actionpack/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    vendor/rails/actionpack/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:35:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:22:in `render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:245:in `render_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1108:in `render_for_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:865:in `render_with_no_layout'
+    vendor/rails/actionpack/lib/action_controller/base.rb:880:in `render_with_no_layout'
+    vendor/rails/actionpack/lib/action_controller/layout.rb:251:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:930:in `render_to_string'
+    app/controllers/application.rb:57:in `create_pdf'
+    app/controllers/application.rb:48:in `render_html_or_redirect_to_pdf'
+    app/controllers/print/invoice_headers_controller.rb:35:in `print_invoice'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:580:in `call_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    E:/ruby186-26/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/rails.rb:76:in `process'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/rails.rb:74:in `synchronize'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/rails.rb:74:in `process'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:282:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:281:in `each'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:281:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/mongrel_rails:128:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/command.rb:212:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/mongrel_rails:281
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    vendor/rails/railties/lib/commands/server.rb:39
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering E:/ror2/aimpaks/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-05 13:45:01) [GET]
+  Session ID: bdfb7e34f92c8ee5929b191b8575ec0d
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;35;1mInvoiceHeader Load (0.000000)[0m   [0mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;36;1mInvoiceHeader Columns (0.015000)[0m   [0;1mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+
+
+ActionView::TemplateError (undefined method `is_a' for "219614":String) on line #29 of print/invoice_headers/_invoice.html.erb:
+26:     </div>
+27:   </div>
+28:   <table id="upper" border="1" rules="all">
+29:     <%= aim_build(:rssfd, :headerRow, :invoice, ':') -%>
+30:     <%= aim_build(:dssfd, :headerRow, :date_shipped, ':') -%>
+31:     <%= aim_build(:dssfr, :headerRow, :reference, ':') -%>
+32:     <%= aim_build(:rssfd, :headerRow, :workorder, ':') -%>
+
+    app/helpers/aim_forms_helper.rb:311:in `evaluate_text_field'
+    app/helpers/aim_forms_helper.rb:106:in `aim_build'
+    app/views/print/invoice_headers/_invoice.html.erb:29:in `_run_erb_47app47views47print47invoice_headers47_invoice46html46erb'
+    vendor/rails/actionpack/lib/action_view/base.rb:338:in `send'
+    vendor/rails/actionpack/lib/action_view/base.rb:338:in `execute'
+    vendor/rails/actionpack/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    vendor/rails/actionpack/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    vendor/rails/actionpack/lib/action_view/partial_template.rb:20:in `render'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    vendor/rails/actionpack/lib/action_view/partial_template.rb:19:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:22:in `render_template'
+    vendor/rails/actionpack/lib/action_view/partials.rb:110:in `render_partial'
+    vendor/rails/actionpack/lib/action_view/base.rb:273:in `render'
+    app/views/print/invoice_headers/print_invoice.html.erb:1:in `_run_erb_47app47views47print47invoice_headers47print_invoice46html46erb'
+    vendor/rails/actionpack/lib/action_view/base.rb:338:in `send'
+    vendor/rails/actionpack/lib/action_view/base.rb:338:in `execute'
+    vendor/rails/actionpack/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    vendor/rails/actionpack/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:35:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:22:in `render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:245:in `render_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1108:in `render_for_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:865:in `render_with_no_layout'
+    vendor/rails/actionpack/lib/action_controller/base.rb:880:in `render_with_no_layout'
+    vendor/rails/actionpack/lib/action_controller/layout.rb:251:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:930:in `render_to_string'
+    app/controllers/application.rb:57:in `create_pdf'
+    app/controllers/application.rb:48:in `render_html_or_redirect_to_pdf'
+    app/controllers/print/invoice_headers_controller.rb:35:in `print_invoice'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:580:in `call_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    E:/ruby186-26/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/rails.rb:76:in `process'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/rails.rb:74:in `synchronize'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/rails.rb:74:in `process'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:282:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:281:in `each'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:281:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/mongrel_rails:128:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/command.rb:212:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/mongrel_rails:281
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    vendor/rails/railties/lib/commands/server.rb:39
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering E:/ror2/aimpaks/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-05 13:45:30) [GET]
+  Session ID: bdfb7e34f92c8ee5929b191b8575ec0d
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;35;1mInvoiceHeader Load (0.000000)[0m   [0mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;36;1mInvoiceHeader Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-05 13:49:04) [GET]
+  Session ID: bdfb7e34f92c8ee5929b191b8575ec0d
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;35;1mInvoiceHeader Load (0.000000)[0m   [0mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;36;1mInvoiceHeader Columns (0.015000)[0m   [0;1mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.gsub) on line #30 of print/invoice_headers/_invoice.html.erb:
+27:   </div>
+28:   <table id="upper" border="1" rules="all">
+29:     <%= aim_build(:rssfd, :headerRow, :invoice, ':') -%>
+30:     <%= aim_build(:dssfd, :headerRow, :date_shipped, ':') -%>
+31:     <%= aim_build(:dssfr, :headerRow, :reference, ':') -%>
+32:     <%= aim_build(:rssfd, :headerRow, :workorder, ':') -%>
+33:     <%= aim_build(:dssfd, :headerRow, :date_ordered, ':', nil, {:date => DateFlorid}) -%>
+
+    E:/ruby186-26/lib/ruby/1.8/date/format.rb:201:in `strftime'
+    app/helpers/aim_forms_helper.rb:313:in `evaluate_text_field'
+    app/helpers/aim_forms_helper.rb:106:in `aim_build'
+    app/views/print/invoice_headers/_invoice.html.erb:30:in `_run_erb_47app47views47print47invoice_headers47_invoice46html46erb'
+    vendor/rails/actionpack/lib/action_view/base.rb:338:in `send'
+    vendor/rails/actionpack/lib/action_view/base.rb:338:in `execute'
+    vendor/rails/actionpack/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    vendor/rails/actionpack/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    vendor/rails/actionpack/lib/action_view/partial_template.rb:20:in `render'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    vendor/rails/actionpack/lib/action_view/partial_template.rb:19:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:22:in `render_template'
+    vendor/rails/actionpack/lib/action_view/partials.rb:110:in `render_partial'
+    vendor/rails/actionpack/lib/action_view/base.rb:273:in `render'
+    app/views/print/invoice_headers/print_invoice.html.erb:1:in `_run_erb_47app47views47print47invoice_headers47print_invoice46html46erb'
+    vendor/rails/actionpack/lib/action_view/base.rb:338:in `send'
+    vendor/rails/actionpack/lib/action_view/base.rb:338:in `execute'
+    vendor/rails/actionpack/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    vendor/rails/actionpack/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:35:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:22:in `render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:245:in `render_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1108:in `render_for_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:865:in `render_with_no_layout'
+    vendor/rails/actionpack/lib/action_controller/base.rb:880:in `render_with_no_layout'
+    vendor/rails/actionpack/lib/action_controller/layout.rb:251:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:930:in `render_to_string'
+    app/controllers/application.rb:57:in `create_pdf'
+    app/controllers/application.rb:48:in `render_html_or_redirect_to_pdf'
+    app/controllers/print/invoice_headers_controller.rb:35:in `print_invoice'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:580:in `call_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    E:/ruby186-26/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/rails.rb:76:in `process'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/rails.rb:74:in `synchronize'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/rails.rb:74:in `process'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:282:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:281:in `each'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:281:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/mongrel_rails:128:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/command.rb:212:in `run'
+    E:/ruby186-26/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/mongrel_rails:281
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:502:in `load'
+    vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    vendor/rails/railties/lib/commands/server.rb:39
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    E:/ruby186-26/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering E:/ror2/aimpaks/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-05 13:50:39) [GET]
+  Session ID: bdfb7e34f92c8ee5929b191b8575ec0d
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;35;1mInvoiceHeader Load (0.000000)[0m   [0mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;36;1mInvoiceHeader Columns (0.015000)[0m   [0;1mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.01600)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.09400 (10 reqs/sec) | Rendering: 0.01600 (17%) | DB: 0.01500 (15%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-05 13:53:21) [GET]
+  Session ID: bdfb7e34f92c8ee5929b191b8575ec0d
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;35;1mInvoiceHeader Load (0.000000)[0m   [0mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;36;1mInvoiceHeader Columns (0.016000)[0m   [0;1mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.01500)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.10900 (9 reqs/sec) | Rendering: 0.03100 (28%) | DB: 0.01600 (14%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-05 13:56:42) [GET]
+  Session ID: bdfb7e34f92c8ee5929b191b8575ec0d
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;35;1mInvoiceHeader Load (0.000000)[0m   [0mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;36;1mInvoiceHeader Columns (0.000000)[0m   [0;1mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.09400 (10 reqs/sec) | Rendering: 0.03200 (34%) | DB: 0.00000 (0%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-05 13:57:32) [GET]
+  Session ID: bdfb7e34f92c8ee5929b191b8575ec0d
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;35;1mInvoiceHeader Load (0.000000)[0m   [0mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;36;1mInvoiceHeader Columns (0.016000)[0m   [0;1mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (51%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-05 14:01:29) [GET]
+  Session ID: bdfb7e34f92c8ee5929b191b8575ec0d
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;35;1mInvoiceHeader Load (0.000000)[0m   [0mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;36;1mInvoiceHeader Columns (0.016000)[0m   [0;1mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.01600)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.10900 (9 reqs/sec) | Rendering: 0.03200 (29%) | DB: 0.01600 (14%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-05 14:02:28) [GET]
+  Session ID: bdfb7e34f92c8ee5929b191b8575ec0d
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;35;1mInvoiceHeader Load (0.000000)[0m   [0mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;36;1mInvoiceHeader Columns (0.016000)[0m   [0;1mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.00000)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.10900 (9 reqs/sec) | Rendering: 0.03100 (28%) | DB: 0.01600 (14%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]
+
+
+Processing InvoiceHeadersController#print_invoice (for 127.0.0.1 at 2008-07-05 14:10:30) [GET]
+  Session ID: bdfb7e34f92c8ee5929b191b8575ec0d
+  Parameters: {"medium"=>"pdf_invoice", "action"=>"print_invoice", "controller"=>"print/invoice_headers"}
+  [4;35;1mInvoiceHeader Load (0.000000)[0m   [0mSELECT * FROM `invoice_headers` LIMIT 1[0m
+  [4;36;1mInvoiceHeader Columns (0.125000)[0m   [0;1mSHOW FIELDS FROM `invoice_headers`[0m
+Rendering template within layouts/pdf_invoice
+Rendering print/invoice_headers/print_invoice
+Rendered print/invoice_headers/_invoice (0.01600)
+Redirected to http://lb:3000/tmp/User_1_Invoice_219614.html
+Completed in 0.20300 (4 reqs/sec) | Rendering: 0.01600 (7%) | DB: 0.14100 (69%) | 302 Found [http://lb/print/invoice_headers/print_invoice?medium=pdf_invoice]

@@ -1,38 +1,54 @@
-<div id="pdf-wrapper">
-  <div>
-    <%= @headerRow.document_title.to_s rescue nil || '' -%><br/>
-    <%= @headerRow.document_number.to_s rescue nil || '' -%><br/>
-    <%= @headerRow.proforma_alert.to_s rescue nil || '' -%><br/>
-    <%= @headerRow.bill_name.to_s rescue nil || '' -%><br/>
-    <%= @headerRow.bill_add1.to_s rescue nil || '' -%><br/>
-    <%= @headerRow.bill_add2.to_s rescue nil || '' -%><br/>
-    <%= @headerRow.bill_add3.to_s rescue nil || '' -%><br/>
-    <%= @headerRow.ship_name.to_s rescue nil || '' -%><br/>
-    <%= @headerRow.ship_add1.to_s rescue nil || '' -%><br/>
-    <%= @headerRow.ship_add2.to_s rescue nil || '' -%><br/>
-    <%= @headerRow.ship_add3.to_s rescue nil || '' -%><br/>
-    <%= @headerRow.invoice.to_s rescue nil || '' -%><br/>
-    <%= @headerRow.date_shipped.to_s rescue nil || '' -%><br/>
-    <%= @headerRow.reference.to_s rescue nil || '' -%><br/>
-    <%= @headerRow.workorder.to_s rescue nil || '' -%><br/>
-    <%= @headerRow.date_ordered.to_s rescue nil || '' -%><br/>
-    <%= @headerRow.terms.to_s rescue nil || '' -%><br/>
-    <%= @headerRow.account.to_s rescue nil || '' -%><br/>
-    <%= @headerRow.ship_via.to_s rescue nil || '' -%><br/>
-    <%= @headerRow.taken_by.to_s rescue nil || '' -%><br/>
-    <%= @headerRow.subtotal_material.to_s rescue nil || '' -%><br/>
-    <%= @headerRow.tax_number.to_s rescue nil || '' -%><br/>
-    <%= @headerRow.invoice_total.to_s rescue nil || '' -%><br/>
-    <%= @headerRow.subtotal_labor.to_s rescue nil || '' -%><br/>
-    <%= @headerRow.tax_amount.to_s rescue nil || '' -%><br/>
-    <%= @headerRow.deposit_type.to_s rescue nil || '' -%><br/>
-    <%= @headerRow.total_deposit_amount.to_s rescue nil || '' -%><br/>
-    <%= @headerRow.subtotal_invoice.to_s rescue nil || '' -%><br/>
-    <%= @headerRow.subtotal_shipping.to_s rescue nil || '' -%><br/>
-    <%= @headerRow.balance_due.to_s rescue nil || '' -%><br/>
-    <%= @headerRow.footnote.to_s rescue nil || '' -%><br/>
+<div id="pdf-wrapper" class="ghw-specs">
+  <div class="form-font">
+    <div id="company-address">
+      <%= @reportInfo[:company][:address].gsub("\n",'<br/>') -%>
+    </div>
+    <div id="company-logo">
+      <%= image_tag(@reportInfo[:company][:logo], :size => "350x80") -%>
+    </div>
+    <div id="company-website">
+      <%= @reportInfo[:company][:website] -%>
+    </div>
   </div>
-  <div class="page-done">
-    &nbsp;
+  <div id="bill-to-block">
+    <span id="bill-to-legend" class="form-font">SOLD TO:</span>
+    <div id="bill-to" class="data-font">
+      <%= @headerRow.bill_name.to_s rescue nil || '' -%><br/>
+      <%= @headerRow.bill_add1.to_s rescue nil || '' -%><br/>
+      <%= @headerRow.bill_add2.to_s rescue nil || '' -%><br/>
+      <%= @headerRow.bill_add3.to_s rescue nil || '' -%><br/>
+    </div>
   </div>
+  <div id="ship-to-block">
+    <span id="ship-to-legend" class="form-font">SHIP TO:</span>
+    <div id="ship-to" class="data-font">
+      <%= collapse_address(@headerRow, 'ship') -%>
+    </div>
+  </div>
+  <table id="upper" border="1" rules="all">
+    <%= aim_build(:rssfd, :headerRow, :invoice, ':') -%>
+    <%= aim_build(:dssfd, :headerRow, :date_shipped, ':', nil, {:date => DateFlorid}) -%>
+    <%= aim_build(:dssfr, :headerRow, :reference, ':') -%>
+    <%= aim_build(:rssfd, :headerRow, :workorder, ':') -%>
+    <%= aim_build(:dssfd, :headerRow, :date_ordered, ':', nil, {:date => DateFlorid}) -%>
+    <%= aim_build(:dssfr, :headerRow, :terms, ':') -%>
+    <%= aim_build(:rssfd, :headerRow, :account, ':') -%>
+    <%= aim_build(:dssfd, :headerRow, :ship_via, ':') -%>
+    <%= aim_build(:dssfr, :headerRow, :taken_by, ':') -%>
+  </table>
+  <table id="lower" border="1" rules="all">
+    <%= aim_build(:rssfd, :headerRow, :subtotal_material, ':') -%>
+    <%= aim_build(:dssfd, :headerRow, :tax_number, ':') -%>
+    <%= aim_build(:dssfr, :headerRow, :invoice_total, ':') -%>
+    <%= aim_build(:rssfd, :headerRow, :subtotal_labor, ':') -%>
+    <%= aim_build(:dssfd, :headerRow, :tax_amount, ':') -%>
+    <%= aim_build(:dssfr, :headerRow, :total_deposit_amount, ':') -%>
+    <%= aim_build(:rssfd, :headerRow, :subtotal_invoice, ':') -%>
+    <%= aim_build(:dssfd, :headerRow, :subtotal_shipping, ':') -%>
+    <%= aim_build(:dssfr, :headerRow, :balance_due, ':') -%>
+  </table>
+  <div id="footer" class="data-font">
+    <%= @headerRow.footnote.to_s rescue nil || '' -%>
+  </div>
+  <div class="page-done">&nbsp;</div>
 </div>

@@ -16,6 +16,7 @@ class Print::InvoiceHeadersController < ApplicationController
   #
   def print_invoice
     @headerRow = InvoiceHeader.find(:first)
+    
     unless @headerRow
       set_flash('<e>No invoice found to print.')
       redirect_to :action => 'index'
@@ -26,8 +27,9 @@ class Print::InvoiceHeadersController < ApplicationController
         :fileTag => @headerRow.invoice.to_s,
         :currentUser => {:id => '1'},
         :layout => params[:medium],
-        :cssFile => "ghw_invoice"
+        :cssFile => "ghw_invoice",
 #        :cssFile => "#{@headerRow[:format_code].downcase.strip}_invoice"
+        :company => InvoiceHeader.company_data(@headerRow.format_code)
         }
       render_html_or_redirect_to_pdf
     end
