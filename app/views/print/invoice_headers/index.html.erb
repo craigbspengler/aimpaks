@@ -1,17 +1,21 @@
-<form action="<%= url_for(:action => 'load_invoice') %>" method="POST">
-  <br/>
+<form action="<%= url_for(:action => 'check_instructions') %>" method="POST">
+      <br/>
   <h3>
-    <%= link_to( 'List Lines', {:controller => 'print/invoice_lines'} ) %>
+    Use Directory Path:#&nbsp;
+    <%= text_field_tag( :pathName, 'q:/ror', :size => '20' ) %>
   </h3>
   <br/>
   <h3>
-    <%= link_to( 'Print Invoice', {:action => :print_invoice, :medium => 'pdf_invoice'} ) %>
+    Process Invoice #:&nbsp;
+    <%= select_tag( :fileName, file_name_options() ) %>
   </h3>
   <br/>
-  <h3>
-    Load Invoice from File:&nbsp;<%= text_field_tag( "fileNamr", 'ROR', :size => 20 ) -%>
-  </h3>
   <div style="text-align: center;">
     <%= submit_tag('Go') -%>
+  </div>
+  <div style="text-align: center;">
+    <h4>
+      <%= link_to ('Clear', :action => 'clear') -%>
+    </h4>
   </div>
 </form>

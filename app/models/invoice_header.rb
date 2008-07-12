@@ -2,10 +2,21 @@ class InvoiceHeader < ActiveRecord::Base
   
   has_many :invoice_lines, :order => :position
 
-  def self.load_dataflex_invoice(fileName)
-    rawFileName = fileName.include?(':') ? fileName : File.join('public', 'tmp', fileName)
-    f = File.new( rawFileName, 'r' ) rescue nil
-    if f.nil? : issue = "<e>Could not open source file: #{rawFileName}"
+  def self.check_instructions(pathName)
+    result = []
+    unless File.directory?(pathName) : issue = "<e>\"#{pathName}\" is not a directory path."
+    else
+      Dir.chdir(pathName)
+      result = Dir['*.ror']
+      issue = result.empty? ? '<w>No invoices pending' : "<i>#{result.size} invoice(s) found."
+      Dir.chdir(RAILS_ROOT) # don't forget this little gem.
+    end
+    return issue, result.empty? ? nil : result.insert(0, '')
+  end # of method "check_instructions".
+  
+  def self.load_dataflex_invoice(fileNamr)
+    f = File.new( fileNamr, 'r' ) rescue nil
+    if f.nil? : issue = "<e>Could not open source file: #{fileNamr}"
     else
       newRawData = f.readlines
       f.close
@@ -68,15 +79,18 @@ class InvoiceHeader < ActiveRecord::Base
         f.close unless f.closed?
       end # of empty file.
     end #of whether there is any downloaded data at all.
-    return issue
+    return issue, headerSaved.nil? ? nil : headerSaved.id
   end # of method "load_dataflex_invoice".
 
   def self.company_data(formatCode)
-    {
-      :address => "2619 Southwest Second Avenue, Fort Lauderdale, Florida, 33315-3115\nPhone: 954.463.2577, Fax: 954.463.3846\nE-Mail: info@generalhardwoods.com",
-      :website => "www.generalhardwoods.com",
-      :logo => "ghmi_logo_invoice.gif"
+    companies = {
+      :ghw => {
+        :address => "2619 Southwest Second Avenue, Fort Lauderdale, Florida, 33315-3115\nPhone: 954.463.2577, Fax: 954.463.3846\nE-Mail: info@generalhardwoods.com",
+        :website => "www.generalhardwoods.com",
+        :logo => "ghmi_logo_invoice.gif"
+      }
     }
+    return companies[formatCode.to_sym]
   end # of method "company_data".
   
   private

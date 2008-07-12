@@ -68,14 +68,16 @@ class ApplicationController < ActionController::Base
       uniqueFileName << "_#{@reportInfo.fetch(:fileTag, defaultNumber).gsub('/','_')}"
     end
     # verify the working tmp folder is present: STOP deployment screw-ups!
-    Dir.mkdir('public/tmp') unless File.directory?('public/tmp')
+    Dir.chdir(RAILS_ROOT)
+    publicRef = 'public/tmp'
+    Dir.mkdir(publicRef) unless File.directory?(publicRef)
     # do the conversion.
-    File.open("public/tmp/#{uniqueFileName}.html",'w') {|f| f.write html }
+    File.open("#{publicRef}#{uniqueFileName}.html",'w') {|f| f.write html }
     #    htmldoc_cmd = "htmldoc -t pdf14 --charset iso-8859-1 --color --quiet --jpeg --fontsize 14 --no-title --header ... --hfimage0 #{img_file} --webpage public/tmp/#{uniqueFileName}.html > public/tmp/#{uniqueFileName}.pdf"
     #    logger.info htmldoc_cmd
     #    `#{htmldoc_cmd}`
     #    return "public/tmp/#{uniqueFileName}.pdf"
-    return "public/tmp/#{uniqueFileName}.html"
+    return "#{publicRef}#{uniqueFileName}.html"
   end
 
 end # of class "ApplicationController".
