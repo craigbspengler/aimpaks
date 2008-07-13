@@ -63,21 +63,22 @@ class ApplicationController < ActionController::Base
       uniqueFileName = "xxyy#{rand()}"
     else
       uniqueFileName = "User_#{@reportInfo[:currentUser][:id]}"
-      uniqueFileName << "_#{@reportInfo[:title]}"
-      defaultNumber = Time.now.strftime('%Y%m%d%H%M%S')
-      uniqueFileName << "_#{@reportInfo.fetch(:fileTag, defaultNumber).gsub('/','_')}"
+      uniqueFileName << "_#{@reportInfo[:title].titleize}"
+      uniqueFileName << "_#{@reportInfo[:fileTag].gsub('/','_')}"
     end
+    uniqueFileName << ".html"
     # verify the working tmp folder is present: STOP deployment screw-ups!
     Dir.chdir(RAILS_ROOT)
-    publicRef = 'public/tmp'
-    Dir.mkdir(publicRef) unless File.directory?(publicRef)
+    publicTmpPath = File.join('public','tmp')
+    Dir.mkdir(publicTmpPath) unless File.directory?(publicTmpPath)
+    fqUniqueFileNamr = File.join(publicTmpPath, uniqueFileName)
     # do the conversion.
-    File.open("#{publicRef}#{uniqueFileName}.html",'w') {|f| f.write html }
+    File.open(fqUniqueFileNamr,'w') {|f| f.write html }
     #    htmldoc_cmd = "htmldoc -t pdf14 --charset iso-8859-1 --color --quiet --jpeg --fontsize 14 --no-title --header ... --hfimage0 #{img_file} --webpage public/tmp/#{uniqueFileName}.html > public/tmp/#{uniqueFileName}.pdf"
     #    logger.info htmldoc_cmd
     #    `#{htmldoc_cmd}`
     #    return "public/tmp/#{uniqueFileName}.pdf"
-    return "#{publicRef}#{uniqueFileName}.html"
+    return fqUniqueFileNamr
   end
 
 end # of class "ApplicationController".

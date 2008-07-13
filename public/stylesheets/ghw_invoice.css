@@ -34,7 +34,6 @@ td {
   clear: right;
   float: right;
   width: 98mm; height: 7mm;
-  /*  border: 1px solid black; */
   padding-top: 0.5em;
   padding-right: 1.0em;
   text-align: right;
@@ -42,6 +41,25 @@ td {
   font-weight: 800;
   font-style: italic;
   letter-spacing: 0.05em;
+}
+#here-i-am {
+  clear: both;
+  position: relative;
+  width: 100%;
+  top: -0.5em;
+  margin: 0;  
+  border: none;
+  padding: 0;
+  color: black;
+  text-align: center;
+}
+#document-title {
+  font-size: 1.1em;
+  font-weight: 800;
+}
+#copy-name {
+  font-size: 1.1em;
+  font-style: italic;
 }
 #bill-to-block {
   position: relative;
@@ -83,56 +101,97 @@ td {
   clear: both;
   position: relative;
   top: 5mm;
-  width: 100%; height: 24mm;
+  width: 100%;
   margin: 0;
   border : 1px solid black;
-/*  border-top: 1px solid black;
-  border-left: 1px solid black; */
   padding: 0;
 }
 .upper-left {
   float: left;
-  width: 30%; height: 6mm;
+  width: 30%;
   margin: 0;
   border : 1px solid black;
-/*  border-right: 1px solid black;
-  border-bottom: 1px solid black; */
   padding: 0;
+  line-height: 1.0em;
 }
 .upper-center {
   float: left;
-  width: 30%; height: 6mm;
+  width: 30%;
   margin: 0;
   border : 1px solid black;
-/*  border-right: 1px solid black;
-  border-bottom: 1px solid black; */
   padding: 0;
+  line-height: 1.0em;
 }
 .upper-right {
   float: left;
-  width: 30%; height: 6mm;
+  width: 30%;
   margin: 0;
   border : 1px solid black;
-/*  border-right: 1px solid black;
-  border-bottom: 1px solid black; */
+  line-height: 1.0em;
+  padding: 0;
+}
+#middle {
+  clear: both;
+  position: relative;
+  top: 5mm;
+  width: 100%; height: 50mm;
+  margin: 0;
+  border: 1px solid black;
   padding: 0;
 }
 #lower {
   clear: both;
   position: relative;
   top: 5mm;
-  width: 100%; height: 24mm;
+  width: 100%;
   margin: 0;
   border : 1px solid black;
 }
-#footer {
-  clear: both;
+#lower-left {
+  float: left;
   position: relative;
   top: 5mm;
+  width: 60%;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+.sign-off {
   width: 100%;
   margin: 0;
-  border: 1px solid black;
+  border: none;
+  padding: 5px;
+  color: blue;
+  text-align: center;
+}
+#lower-money {
+  float: right;
+  width: 30%;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+#balance_due {
+  font-weight: 800;
+}
+.right span {
+  float: right;
+}
+#bye-bye {
+  clear: both;
+  position: relative;
+  top: 6mm;
+  width: 100%;
+  margin: 0;
+  border: none;
   padding: 5px;
   color: red;
   text-align: center;
+}
+#appreciation {
+  font-size: 1.1em;
+}
+#thank-you {
+  font-size: 1.1em;
+  font-style: italic;
 }

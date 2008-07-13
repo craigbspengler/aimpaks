@@ -10,7 +10,11 @@
       <%= @reportInfo[:company][:website] -%>
     </div>
   </div>
-  <div id="bill-to-block">
+   <div id="here-i-am">
+    <span id="document-title" class="form-font"><%= @headerRow.document_title %>&nbsp;&nbsp</span>
+    <span id="copy-name" class="form-font">Customer's Copy</span>
+  </div>
+ <div id="bill-to-block">
     <span id="bill-to-legend" class="form-font">SOLD TO:</span>
     <div id="bill-to" class="data-font">
       <%= @headerRow.bill_name.to_s rescue nil || '' -%><br/>
@@ -26,29 +30,34 @@
     </div>
   </div>
   <table id="upper" border="1" rules="all">
-    <%= aim_build(:rssfd, :headerRow, :invoice, ':') -%>
-    <%= aim_build(:dssfd, :headerRow, :date_shipped, ':', nil, {:date => DateFlorid}) -%>
-    <%= aim_build(:dssfr, :headerRow, :reference, ':') -%>
-    <%= aim_build(:rssfd, :headerRow, :workorder, ':') -%>
-    <%= aim_build(:dssfd, :headerRow, :date_ordered, ':', nil, {:date => DateFlorid}) -%>
-    <%= aim_build(:dssfr, :headerRow, :terms, ':') -%>
-    <%= aim_build(:rssfd, :headerRow, :account, ':') -%>
-    <%= aim_build(:dssfd, :headerRow, :ship_via, ':') -%>
-    <%= aim_build(:dssfr, :headerRow, :taken_by, ':') -%>
+    <%= aim_build(:rssfd, :headerRow, :invoice, 'Invoice Number:&nbsp;&nbsp;') -%>
+    <%= aim_build(:dssfd, :headerRow, :date_shipped, 'Invoice Date:&nbsp;&nbsp;', nil, {:date => DateFlorid}) -%>
+    <%= aim_build(:dssfr, :headerRow, :reference, 'Customer PO:&nbsp;&nbsp;') -%>
+    <%= aim_build(:rssfd, :headerRow, :tax_number, 'FSST Certificate Number:&nbsp;&nbsp;') -%>
+    <%= aim_build(:dssfd, :headerRow, :date_ordered, 'Order Date:&nbsp;&nbsp;', nil, {:date => DateFlorid}) -%>
+    <%= aim_build(:dssfr, :headerRow, :terms, 'Terms of Sale:&nbsp;&nbsp;') -%>
+    <%= aim_build(:rssfd, :headerRow, :account, 'Account Number:&nbsp;&nbsp;') -%>
+    <%= aim_build(:dssfd, :headerRow, :ship_via, 'Shipped Via:&nbsp;&nbsp;') -%>
+    <%= aim_build(:dssfr, :headerRow, :taken_by, 'Sold By:&nbsp;&nbsp;') -%>
   </table>
-  <table id="lower" border="1" rules="all">
-    <%= aim_build(:rssfd, :headerRow, :subtotal_material, ':') -%>
-    <%= aim_build(:dssfd, :headerRow, :tax_number, ':') -%>
-    <%= aim_build(:dssfr, :headerRow, :invoice_total, ':') -%>
-    <%= aim_build(:rssfd, :headerRow, :subtotal_labor, ':') -%>
-    <%= aim_build(:dssfd, :headerRow, :tax_amount, ':') -%>
-    <%= aim_build(:dssfr, :headerRow, :total_deposit_amount, ':') -%>
-    <%= aim_build(:rssfd, :headerRow, :subtotal_invoice, ':') -%>
-    <%= aim_build(:dssfd, :headerRow, :subtotal_shipping, ':') -%>
-    <%= aim_build(:dssfr, :headerRow, :balance_due, ':') -%>
-  </table>
-  <div id="footer" class="data-font">
-    <%= @headerRow.footnote.to_s rescue nil || '' -%>
+  <div id="middle">&nbsp;</div>
+  <div id="lower">
+    <div id="lower-left">
+      <div class="sign-off data-font"><%= @headerRow.footnote.to_s rescue nil || '' -%></div>
+      <div class="sign-off form-font">I acknowledge receipt of the above order in good condition.</div>
+      <div class="sign-off form-font">Signature:&nbsp;______________________________________</div>
+    </div>
+    <table id="lower-money" border="1" rules="all">
+      <%= aim_build(:rssfr, :headerRow, :subtotal_invoice, 'Invoice Subtotal:&nbsp;&nbsp;') -%>
+      <%= aim_build(:rssfr, :headerRow, :tax_amount, 'Florida State Sales Tax:&nbsp;&nbsp;') -%>
+      <%= aim_build(:rssfr, :headerRow, :subtotal_shipping, 'Shipping/Handling:&nbsp;&nbsp;') -%>
+      <%= aim_build(:rssfr, :headerRow, :total_deposit_amount, 'Prepaid/Deposits (-):&nbsp;&nbsp;') -%>
+      <%= aim_build([:rssfr, {:l => 'id="balance_due"'}], :headerRow, :balance_due, 'BALANCE DUE:&nbsp;&nbsp;') -%>
+    </table>
+  </div>
+  <div id="bye-bye">
+    <span id="appreciation" class="form-font">We Appreciate Your Business.&nbsp;&nbsp;</span>
+    <span id="thank-you" class="form-font">Thank You!</span>
   </div>
   <div class="page-done">&nbsp;</div>
 </div>

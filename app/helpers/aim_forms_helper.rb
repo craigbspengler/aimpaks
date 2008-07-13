@@ -68,7 +68,7 @@ module AimFormsHelper
     # (1) ----------------------------------------
     r << case s[1]
     when 'l': "<label#{more.fetch(:l,'')}>#{labelText}</label>"
-    when 's': "<span class=\"form-font\">#{labelText}</span>"
+    when 's': "<span#{more.fetch(:l,'')} class=\"form-font\">#{labelText}</span>"
     when 'o': "<label#{more.fetch(:l,'')}>#{labelText}</label>"
     else
       ''
@@ -109,7 +109,8 @@ module AimFormsHelper
       when 't': evaluate_textarea(attributeValue, s[0])
       else
         ''
-      end # of edit-body mode.
+      end # of body format-variable mode.
+      # add in the formatted attributeValue.
       body = '&nbsp;' if body.nil? || body.to_s.empty?
       unless body.is_a?(BigDecimal) : r << body.to_s
       else
@@ -309,7 +310,7 @@ module AimFormsHelper
     (attributeValue.nil? || attributeValue == 0) ? 'NO' : 'YES'
   end # of method "evaluate_checkbox".
 
-  # Returns s formatted date or datetime is such, otw value of the argument.
+  # Returns s formatted date or datetime if such, otw value of the argument.
   # 
   def evaluate_text_field(attributeValue, options)
     if attributeValue.is_a?(Date)

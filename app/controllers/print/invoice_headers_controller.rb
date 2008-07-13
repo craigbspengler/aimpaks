@@ -6,7 +6,7 @@ class Print::InvoiceHeadersController < ApplicationController
     session[:fileNamesList] = session[:fileNamesList] || ''
   end # of action "index".
 
-  def clear
+  def refresh
     session[:fileNamesList] = ''
     redirect_to :action => 'index'
   end
