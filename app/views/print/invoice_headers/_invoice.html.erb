@@ -10,11 +10,11 @@
       <%= @reportInfo[:company][:website] -%>
     </div>
   </div>
-   <div id="here-i-am">
+  <div id="here-i-am">
     <span id="document-title" class="form-font"><%= @headerRow.document_title %>&nbsp;&nbsp</span>
     <span id="copy-name" class="form-font">Customer's Copy</span>
   </div>
- <div id="bill-to-block">
+  <div id="bill-to-block">
     <span id="bill-to-legend" class="form-font">SOLD TO:</span>
     <div id="bill-to" class="data-font">
       <%= @headerRow.bill_name.to_s rescue nil || '' -%><br/>
@@ -43,17 +43,25 @@
   <div id="middle">&nbsp;</div>
   <div id="lower">
     <div id="lower-left">
+      <div class="form-font" style="text-align: center;">PAYMENT NOTE:</div>
+      <div class="form-font">__&nbsp;Cash</div>
+      <div class="form-font">__&nbsp;Check #_______</div>
+      <div class="form-font">__&nbsp;Card Type: ___</div>
+    </div>
+    <div id="lower-center">
       <div class="sign-off data-font"><%= @headerRow.footnote.to_s rescue nil || '' -%></div>
       <div class="sign-off form-font">I acknowledge receipt of the above order in good condition.</div>
-      <div class="sign-off form-font">Signature:&nbsp;______________________________________</div>
+      <div class="sign-off form-font">Signature:&nbsp;_________________________________</div>
     </div>
-    <table id="lower-money" border="1" rules="all">
-      <%= aim_build(:rssfr, :headerRow, :subtotal_invoice, 'Invoice Subtotal:&nbsp;&nbsp;') -%>
-      <%= aim_build(:rssfr, :headerRow, :tax_amount, 'Florida State Sales Tax:&nbsp;&nbsp;') -%>
-      <%= aim_build(:rssfr, :headerRow, :subtotal_shipping, 'Shipping/Handling:&nbsp;&nbsp;') -%>
-      <%= aim_build(:rssfr, :headerRow, :total_deposit_amount, 'Prepaid/Deposits (-):&nbsp;&nbsp;') -%>
-      <%= aim_build([:rssfr, {:l => 'id="balance_due"'}], :headerRow, :balance_due, 'BALANCE DUE:&nbsp;&nbsp;') -%>
-    </table>
+    <div id="lower-money">
+      <table border="1" rules="all">
+        <%= aim_build(:rssfr, :headerRow, :subtotal_invoice, 'Invoice Subtotal:&nbsp;&nbsp;') -%>
+        <%= aim_build(:rssfr, :headerRow, :tax_amount, 'Florida State Sales Tax:&nbsp;&nbsp;') -%>
+        <%= aim_build(:rssfr, :headerRow, :subtotal_shipping, 'Shipping/Handling:&nbsp;&nbsp;') -%>
+        <%= aim_build(:rssfr, :headerRow, :total_deposit_amount, 'Prepaid/Deposits (-):&nbsp;&nbsp;') -%>
+        <%= aim_build([:rssfr, {:l => 'id="balance_due"'}], :headerRow, :balance_due, 'BALANCE DUE:&nbsp;&nbsp;') -%>
+      </table>
+    </div>
   </div>
   <div id="bye-bye">
     <span id="appreciation" class="form-font">We Appreciate Your Business.&nbsp;&nbsp;</span>
