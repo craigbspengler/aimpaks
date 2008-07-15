@@ -50,9 +50,23 @@ td {
   margin: 0;  
   border: none;
   padding: 0;
+  text-align: center;
+}
+.customer {
+  color: blue;
+  background-color: #eeeeff;
+}
+.alpha {
+  color: #ffc000;
+  background-color: #fffaee;
+}
+.numerical {
+  color: red;
+  background-color: #ffeeee;
+}
+.packing {
   color: black;
   background-color: #f5f5f5;
-  text-align: center;
 }
 #document-title {
   font-size: 1.1em;
