@@ -9,6 +9,10 @@
     Process Invoice #:&nbsp;
     <%= select_tag( :fileName, file_name_options() ) %>
   </h3>
+  <%= radio_button_tag( :invoiceCopies, 'N' ) -%> Normal Copies (Account, Numerical, Customer)<br/>
+  <%= radio_button_tag( :invoiceCopies, 'D' ) -%> Normal Set plus the Delivery Note<br/>
+  <%= radio_button_tag( :invoiceCopies, 'R', true ) -%> Reprint Invoice<br/>
+  <%= radio_button_tag( :invoiceCopies, 'P' ) -%> Delivery Note Only<br/>
   <br/>
   <div style="text-align: center;">
     <%= submit_tag('Go') -%>

@@ -8,6 +8,14 @@ module AimFormsHelper
     value = model_instance.send(attribute.to_s)
     value.is_a?(BigDecimal) ? sprintf("%0.2f", value) : value.to_s
   end
+  
+  def money(source, dollar_sign = false)
+    value = source || BigDecimal.new(0.00)
+    result = number_to_currency(value)
+    return dollar_sign ?  result : result.gsub('$', '')
+#    result = sprintf("%0.2f", value)
+#    return dollar_sign ? ("$#{result}") : result
+  end
 
   # Build up an html component according to the first {string|symbol} which
   # MUST contain five characters, case and positionally significant,

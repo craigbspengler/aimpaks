@@ -21,7 +21,7 @@ class Print::InvoiceHeadersController < ApplicationController
       fileNamr = File.join(params[:pathName], params[:fileName])
       issue, headerRow = InvoiceHeader.load_dataflex_invoice(fileNamr)
       if headerRow
-        redirect_to :action => 'print_invoice', :id => headerRow, :medium => 'pdf_invoice'
+        redirect_to :action => 'print_invoice', :id => headerRow, :medium => 'pdf_invoice', :invoiceCopies => params[:invoiceCopies]
       else
         set_flash(issue)
         redirect_to :action => :index
@@ -43,9 +43,9 @@ class Print::InvoiceHeadersController < ApplicationController
       set_flash('<e>No invoice found to print.')
       redirect_to :action => 'index'
     else
-      @copiesInfo = case (params[:mode] rescue nil) || 'R'
-      when 'N' : [["Customer's Copy", :customer],["Account Copy", :alpha],["Numerical File", :numerical]]
-      when 'D' : [["Customer's Copy", :customer],["Account Copy", :alpha],["Numerical File", :numerical],["Delivery Note", :packing]]
+      @copiesInfo = case (params[:invoiceCopies] rescue nil) || 'R'
+      when 'N' : [["Account File", :alpha],["Numerical File", :numerical],["Customer's Copy", :customer]]
+      when 'D' : [["Account File", :alpha],["Numerical File", :numerical],["Customer's Copy", :customer],["Delivery Note", :packing]]
       when 'R' : [["Reprint", :customer]]
       when 'P' : [["Delivery Note", :packing]]
       end

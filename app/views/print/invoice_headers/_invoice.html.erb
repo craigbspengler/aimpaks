@@ -62,12 +62,12 @@
     </div>
     <% unless @copyInfo.last.to_s.eql?('packing') -%>
       <div id="lower-money">
-        <table border="1" rules="all">
-          <%= aim_build(:rssfr, :headerRow, :subtotal_invoice, 'Invoice Subtotal:&nbsp;&nbsp;') -%>
-          <%= aim_build(:rssfr, :headerRow, :tax_amount, 'Florida State Sales Tax:&nbsp;&nbsp;') -%>
-          <%= aim_build(:rssfr, :headerRow, :subtotal_shipping, 'Shipping/Handling:&nbsp;&nbsp;') -%>
-          <%= aim_build(:rssfr, :headerRow, :total_deposit_amount, 'Prepaid/Deposits (-):&nbsp;&nbsp;') -%>
-          <%= aim_build([:rssfr, {:l => 'id="balance_due"'}], :headerRow, :balance_due, 'BALANCE DUE:&nbsp;&nbsp;') -%>
+        <table border="1" rules="rows">
+          <tr><td class="form-font money-left">Invoice Subtotal:</td><td class="data-font money-right"><%= money(@headerRow.subtotal_invoice) -%></td></tr>
+          <tr><td class="form-font money-left">Florida State Sales Tax:</td><td class="data-font money-right"><%= money(@headerRow.tax_amount) -%></td></tr>
+          <tr><td class="form-font money-left">Shipping/Handling:</td><td class="data-font money-right"><%= money(@headerRow.subtotal_shipping) -%></td></tr>
+          <tr><td class="form-font money-left">Prepaid/Deposits (-):</td><td class="data-font money-right"><%= money(@headerRow.total_deposit_amount) -%></td></tr>
+          <tr id="balance_due"><td class="form-font money-left">BALANCE DUE:</td><td class="data-font money-right"><%= money(@headerRow.balance_due, true) -%></td></tr>
         </table>
       </div>
     <% end -%>
