@@ -1,18 +1,10 @@
 <tr>
-  <td>&nbsp;</td>
-  <td>&nbsp;</td>
-  <td>&nbsp;</td>
-  <td class="delivery">
+  <td class="delivery" colspan="9">
     <div class="delivery-block">
-      <div>DELIVERY&nbsp;NOTE</div>
-      <div>Phone:&nbsp;<%= delivery_phone -%></div>
-      <div>Contact:&nbsp;<%= @bodyRow.delivery_contact rescue nil || '' -%></div>
-      <div><%= delivery_special -%></div>
+      <span>DELIVERY NOTE&nbsp;&diams;</span>
+      <span>Phone:&nbsp;<%= delivery_phone -%>&nbsp;&diams;</span>
+      <span>Contact:&nbsp;<%= @bodyRow.delivery_contact rescue nil || '' -%>&nbsp;&diams;</span>
+      <span><%= delivery_special -%></span>
     </div>
   </td>
-  <td>&nbsp;</td>
-  <td>&nbsp;</td>
-  <td>&nbsp;</td>
-  <td>&nbsp;</td>
-  <td>&nbsp;</td>
 </tr>

@@ -16,6 +16,11 @@ td {
   font-size: 10pt;
   font-weight: 600;
 }
+.body-font {
+  font-family: "Bitstream Vera Sans Mono", "Courier New", monospace;
+  font-size: 9pt;
+  font-weight: 400;
+}
 /* ----------------- header and logo display */
 #company-address {
   float: left;
@@ -164,13 +169,26 @@ td {
   border-bottom: 1px solid black;
 }
 .delivery {
-  border: 6px outset #e43551;
+  position: relative;
+  top: 5px;
+  border: 6px solid #e43551;
 }
 .delivery-block {
+  padding-top: 5px;
+  padding-bottom: 5px;
   font-weight: 800;
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-align: center;
-  margin: 3px;
+}
+.deposit {
+  border-bottom: 1px solid black;
+}
+.deposit-block {
+  padding: 2px;
+  text-align: left;
+}
+.sku-cell, .um-cell {
+  text-align: center;
 }
 /* ----------------- payment, signature, money */
 #lower {

@@ -1,5 +1,11 @@
 <tr>
-  <td><%= @bodyRow.id.to_s -%></td>
-  <td><%= @bodyRow.position.to_s -%></td>
-  <td><%= @bodyRow.line_mode -%></td>
+  <td class="money-right"><%= numero(@bodyRow.part_shipped, '2') -%></td>
+  <td class="money-right"><%= numero(@bodyRow.part_shipped, '2') -%></td>
+  <td class="sku-cell"><%= @bodyRow.part_sku_um -%></td>
+  <td><%= @bodyRow.part_description -%></td>
+  <td class="um-cell"><%= @bodyRow.part_um -%></td>
+  <td class="money-right"><%= money(@bodyRow.part_unit_price) -%></td>
+  <td class="money-right"><%= numero(@bodyRow.part_discount, '2zh%') -%></td>
+  <td class="money-right"><%= money(@bodyRow.part_net_price) -%></td>
+  <td class="money-right"><%= money(@bodyRow.part_extension) -%></td>
 </tr>

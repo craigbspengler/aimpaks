@@ -24,6 +24,7 @@ module AimFormsHelper
     else
       precision = (options.match(/(\d)/)[0] rescue nil || '2').to_i
       result = number_with_precision(value, precision)
+      result << '%' if options.include?('%')
     end
     return result
   end

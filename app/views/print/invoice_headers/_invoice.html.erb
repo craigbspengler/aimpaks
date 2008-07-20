@@ -3,8 +3,8 @@
   <div class="middle">
     <table border="1" rules="cols">
       <thead class="form-font">
-        <th width="7%">Quantity Ordered</th>
-        <th width="7%">Quantity Shipped</th>
+        <th width="7%">Ordered</th>
+        <th width="7%">Shipped</th>
         <th width="*">SKU</th>
         <th>Description</th>
         <th width="*">UM</th>
@@ -13,7 +13,7 @@
         <th width="8%">Unit Net</th>
         <th width="10%">Extension</th>
       </thead>
-      <tbody>
+      <tbody class="body-font">
         <% @bodyRows.each do |@bodyRow| -%>
           <%= render :partial => "invoice_body_#{@bodyRow.line_mode.strip}" %>
         <% end -%>
