@@ -1,0 +1,35 @@
+  <div id="lower">
+    <div id="lower-left">
+      <% if @copyInfo.last.to_s.eql?('packing') -%>
+        <div class="form-font">&nbsp;</div>
+        <div class="form-font">&nbsp;</div>
+        <div class="form-font">&nbsp;</div>
+        <div class="form-font">&nbsp;</div>
+      <% else -%>
+        <div class="form-font" style="text-align: center;">PAYMENT NOTE:</div>
+        <div class="form-font">__&nbsp;Cash</div>
+        <div class="form-font">__&nbsp;Check #_______</div>
+        <div class="form-font">__&nbsp;Card Type: ___</div>
+      <% end -%>
+    </div>
+    <div id="lower-center">
+      <div class="sign-off data-font"><%= @headerRow.footnote.to_s rescue nil || '' -%></div>
+      <div class="sign-off form-font">I acknowledge receipt of the above order in good condition.</div>
+      <div class="sign-off form-font">Signature:&nbsp;_________________________________</div>
+    </div>
+    <% unless @copyInfo.last.to_s.eql?('packing') -%>
+      <div id="lower-money">
+        <table border="1" rules="rows">
+          <tr><td class="form-font money-left">Invoice Subtotal:</td><td class="data-font money-right"><%= money(@headerRow.subtotal_invoice) -%></td></tr>
+          <tr><td class="form-font money-left">Florida State Sales Tax:</td><td class="data-font money-right"><%= money(@headerRow.tax_amount) -%></td></tr>
+          <tr><td class="form-font money-left">Shipping/Handling:</td><td class="data-font money-right"><%= money(@headerRow.subtotal_shipping) -%></td></tr>
+          <tr><td class="form-font money-left">Prepaid/Deposits (-):</td><td class="data-font money-right"><%= money(@headerRow.total_deposit_amount) -%></td></tr>
+          <tr id="balance_due"><td class="form-font money-left">BALANCE DUE:</td><td class="data-font money-right"><%= money(@headerRow.balance_due, true) -%></td></tr>
+        </table>
+      </div>
+    <% end -%>
+  </div>
+  <div id="bye-bye">
+    <span id="appreciation" class="form-font">We Appreciate Your Business.&nbsp;&nbsp;</span>
+    <span id="thank-you" class="form-font">Thank You!</span>
+  </div>

@@ -27,7 +27,7 @@ td {
 #company-logo {
   float: right;
   width: 98mm; height: 20mm;
-/*  border: 1px solid black; */
+  /*  border: 1px solid black; */
 }
 #company-website {
   clear: right;
@@ -88,7 +88,7 @@ td {
 #bill-to-legend {
   width: 100%; height: 7mm;
   margin: inherit;
-/*  border-bottom: 1px solid black; */
+  /*  border-bottom: 1px solid black; */
   padding-left: 5px;
 }
 #bill-to {
@@ -105,7 +105,7 @@ td {
 }
 #ship-to-legend {
   width: 100%; height: 7mm;
-/*  border-bottom: 1px solid black; */
+  /*  border-bottom: 1px solid black; */
   padding: 5px;
 }
 #ship-to {
@@ -148,13 +148,29 @@ td {
   padding: 0;
 }
 /* ----------------- line items schedule */
-#middle {
+.middle {
   clear: both;
   position: relative;
   top: 5mm; width: 100%; height: 140mm;
   margin-top: 0.3em;
   border: 1px solid black;
   padding: 0;
+  font-weight: 400;
+}
+.middle table {
+  width: 100%;
+}
+.middle th {
+  border-bottom: 1px solid black;
+}
+.delivery {
+  border: 6px outset #e43551;
+}
+.delivery-block {
+  font-weight: 800;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 3px;
 }
 /* ----------------- payment, signature, money */
 #lower {

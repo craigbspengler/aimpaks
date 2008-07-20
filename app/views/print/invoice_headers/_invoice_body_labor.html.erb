@@ -1,0 +1,11 @@
+<tr class="labor data-font">
+  <td>&nbsp;</td>
+  <td class="money-right"><%= numero(@bodyRow.labor_shipped, '2') -%></td>
+  <td><%= @bodyRow.labor_sku -%></td>
+  <td>LABOR CHARGE</td>
+  <td>HR</td>
+  <td class="money-right"><%= money(@bodyRow.labor_unit_list) -%></td>
+  <td class="money-right"><%= numero(@bodyRow.labor_discount, '2zh') -%></td>
+  <td class="money-right"><%= money(@bodyRow.labor_unit_price) -%></td>
+  <td class="money-right"><%= money(@bodyRow.labor_extension) -%></td>
+</tr>

@@ -39,6 +39,7 @@ class Print::InvoiceHeadersController < ApplicationController
   #
   def print_invoice
     @headerRow = InvoiceHeader.find(params[:id])
+    @bodyRows = @headerRow.invoice_lines(:order => 'position')
     unless @headerRow
       set_flash('<e>No invoice found to print.')
       redirect_to :action => 'index'

@@ -1,80 +1,25 @@
 <div id="pdf-wrapper" class="ghw-specs">
-  <div class="form-font">
-    <div id="company-address">
-      <%= @reportInfo[:company][:address].gsub("\n",'<br/>') -%>
-    </div>
-    <div id="company-logo">
-      <%= image_tag(@reportInfo[:company][:logo], :size => "350x80") -%>
-    </div>
-    <div id="company-website">
-      <%= @reportInfo[:company][:website] -%>
-    </div>
+  <%= render :partial => 'invoice_upper_major' %>
+  <div class="middle">
+    <table border="1" rules="cols">
+      <thead class="form-font">
+        <th width="7%">Quantity Ordered</th>
+        <th width="7%">Quantity Shipped</th>
+        <th width="*">SKU</th>
+        <th>Description</th>
+        <th width="*">UM</th>
+        <th width="8%">Unit Price</th>
+        <th width="4%">Discount</th>
+        <th width="8%">Unit Net</th>
+        <th width="10%">Extension</th>
+      </thead>
+      <tbody>
+        <% @bodyRows.each do |@bodyRow| -%>
+          <%= render :partial => "invoice_body_#{@bodyRow.line_mode.strip}" %>
+        <% end -%>
+      </tbody>
+    </table>
   </div>
-  <div id="here-i-am" class="<%= @copyInfo.last.to_s -%>">
-    <span id="document-title" class="form-font"><%= @headerRow.document_title %>&nbsp;&nbsp</span>
-    <span id="copy-name" class="form-font"><%= @copyInfo.first -%></span>
-  </div>
-  <div id="bill-to-block">
-    <span id="bill-to-legend" class="form-font">SOLD TO:</span>
-    <div id="bill-to" class="data-font">
-      <%= @headerRow.bill_name.to_s rescue nil || '' -%><br/>
-      <%= @headerRow.bill_add1.to_s rescue nil || '' -%><br/>
-      <%= @headerRow.bill_add2.to_s rescue nil || '' -%><br/>
-      <%= @headerRow.bill_add3.to_s rescue nil || '' -%><br/>
-    </div>
-  </div>
-  <div id="ship-to-block">
-    <span id="ship-to-legend" class="form-font">SHIP TO:</span>
-    <div id="ship-to" class="data-font">
-      <%= collapse_address(@headerRow, 'ship') -%>
-    </div>
-  </div>
-  <table id="upper" border="1" rules="all">
-    <%= aim_build(:rssfd, :headerRow, :invoice, 'Invoice Number:&nbsp;&nbsp;') -%>
-    <%= aim_build(:dssfd, :headerRow, :date_shipped, 'Invoice Date:&nbsp;&nbsp;', nil, {:date => DateFlorid}) -%>
-    <%= aim_build(:dssfr, :headerRow, :reference, 'Customer PO:&nbsp;&nbsp;') -%>
-    <%= aim_build(:rssfd, :headerRow, :tax_number, 'FSST Certificate Number:&nbsp;&nbsp;') -%>
-    <%= aim_build(:dssfd, :headerRow, :date_ordered, 'Order Date:&nbsp;&nbsp;', nil, {:date => DateFlorid}) -%>
-    <%= aim_build(:dssfr, :headerRow, :terms, 'Terms of Sale:&nbsp;&nbsp;') -%>
-    <%= aim_build(:rssfd, :headerRow, :account, 'Account Number:&nbsp;&nbsp;') -%>
-    <%= aim_build(:dssfd, :headerRow, :ship_via, 'Shipped Via:&nbsp;&nbsp;') -%>
-    <%= aim_build(:dssfr, :headerRow, :taken_by, 'Sold By:&nbsp;&nbsp;') -%>
-  </table>
-  <div id="middle">&nbsp;</div>
-  <div id="lower">
-    <div id="lower-left">
-      <% if @copyInfo.last.to_s.eql?('packing') -%>
-        <div class="form-font">&nbsp;</div>
-        <div class="form-font">&nbsp;</div>
-        <div class="form-font">&nbsp;</div>
-        <div class="form-font">&nbsp;</div>
-      <% else -%>
-        <div class="form-font" style="text-align: center;">PAYMENT NOTE:</div>
-        <div class="form-font">__&nbsp;Cash</div>
-        <div class="form-font">__&nbsp;Check #_______</div>
-        <div class="form-font">__&nbsp;Card Type: ___</div>
-      <% end -%>
-    </div>
-    <div id="lower-center">
-      <div class="sign-off data-font"><%= @headerRow.footnote.to_s rescue nil || '' -%></div>
-      <div class="sign-off form-font">I acknowledge receipt of the above order in good condition.</div>
-      <div class="sign-off form-font">Signature:&nbsp;_________________________________</div>
-    </div>
-    <% unless @copyInfo.last.to_s.eql?('packing') -%>
-      <div id="lower-money">
-        <table border="1" rules="rows">
-          <tr><td class="form-font money-left">Invoice Subtotal:</td><td class="data-font money-right"><%= money(@headerRow.subtotal_invoice) -%></td></tr>
-          <tr><td class="form-font money-left">Florida State Sales Tax:</td><td class="data-font money-right"><%= money(@headerRow.tax_amount) -%></td></tr>
-          <tr><td class="form-font money-left">Shipping/Handling:</td><td class="data-font money-right"><%= money(@headerRow.subtotal_shipping) -%></td></tr>
-          <tr><td class="form-font money-left">Prepaid/Deposits (-):</td><td class="data-font money-right"><%= money(@headerRow.total_deposit_amount) -%></td></tr>
-          <tr id="balance_due"><td class="form-font money-left">BALANCE DUE:</td><td class="data-font money-right"><%= money(@headerRow.balance_due, true) -%></td></tr>
-        </table>
-      </div>
-    <% end -%>
-  </div>
-  <div id="bye-bye">
-    <span id="appreciation" class="form-font">We Appreciate Your Business.&nbsp;&nbsp;</span>
-    <span id="thank-you" class="form-font">Thank You!</span>
-  </div>
+  <%= render :partial => 'invoice_lower_major' %>
   <div class="page-done">&nbsp;</div>
 </div>

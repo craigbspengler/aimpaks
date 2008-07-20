@@ -1,0 +1,18 @@
+<tr>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td class="deposit data-font">
+    <div class="deposit-block">
+      <span>Deposit Received on&nbsp;</span>
+      <span><%= @bodyRow.deposit_received.strftime(DateFlorid) -%>:&nbsp;</span>
+      <span><%= @bodyRow.deposit_source -%>&nbsp;for&nbsp;</span>
+      <span><%= money(@bodyRow.deposit_amount, true) -%></span>
+    </div>
+  </td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+</tr>

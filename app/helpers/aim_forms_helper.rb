@@ -10,11 +10,22 @@ module AimFormsHelper
   end
   
   def money(source, dollar_sign = false)
-    value = source || BigDecimal.new(0.00)
+    value = source || BigDecimal.new('0.00')
     result = number_to_currency(value)
     return dollar_sign ?  result : result.gsub('$', '')
-#    result = sprintf("%0.2f", value)
-#    return dollar_sign ? ("$#{result}") : result
+    #    result = sprintf("%0.2f", value)
+    #    return dollar_sign ? ("$#{result}") : result
+  end
+  
+  def numero(source, options = '2')
+    value = source || BigDecimal.new('0.00')
+    if value == 0 && options.downcase.include?('z')
+      result = options.downcase.include?('h') ? '&nbsp;' : ''
+    else
+      precision = (options.match(/(\d)/)[0] rescue nil || '2').to_i
+      result = number_with_precision(value, precision)
+    end
+    return result
   end
 
   # Build up an html component according to the first {string|symbol} which
