@@ -3,12 +3,31 @@ class Print::InvoiceHeadersController < ApplicationController
   #  active_scaffold
 
   def index
+    session[:directory] = session[:directory] || 'q:/ror'
     session[:fileNamesList] = session[:fileNamesList] || ''
+    issue, session[:active] = InvoiceHeader.fetch_active_state(session[:directory])
+    set_flash issue
   end # of action "index".
 
+  def check_main
+    session[:directory] = params[:pathName]
+    redirect_to :action => 'index'
+  end # of action "check_main".
+  
+  def toggle_active
+    issue, session[:active] = InvoiceHeader.fetch_active_state(session[:directory], true)
+    set_flash issue
+    redirect_to :action => 'index'
+  end
+  
+  def manual_control
+    issue, @invoices = InvoiceHeader.get_manual_list
+    set_flash issue
+  end
+  
   def refresh
     session[:fileNamesList] = ''
-    redirect_to :action => 'index'
+    redirect_to :action => 'manual_control'
   end
   
   def check_instructions
@@ -16,7 +35,7 @@ class Print::InvoiceHeadersController < ApplicationController
       issue, fileNamesList = InvoiceHeader.check_instructions(params[:pathName])
       set_flash(issue)
       session[:fileNamesList] = fileNamesList if fileNamesList
-      redirect_to :action => :index
+      redirect_to :action => 'manual_control'
     else
       fileNamr = File.join(params[:pathName], params[:fileName])
       issue, headerRow = InvoiceHeader.load_dataflex_invoice(fileNamr)
@@ -24,7 +43,7 @@ class Print::InvoiceHeadersController < ApplicationController
         redirect_to :action => 'print_invoice', :id => headerRow, :medium => 'pdf_invoice', :invoiceCopies => params[:invoiceCopies]
       else
         set_flash(issue)
-        redirect_to :action => :index
+        redirect_to :action => 'manual_control'
       end
     end
   end # of action "check_instructions".
@@ -32,17 +51,17 @@ class Print::InvoiceHeadersController < ApplicationController
   def load_invoice
     issue = InvoiceHeader.load_dataflex_invoice(params[:fileNamr])
     set_flash issue
-    redirect_to :action => 'index'
+    redirect_to :action => 'manual_control'
   end # of action "load_invoice".
 
   # Print out the invoice from the dataFLEX print intermediate file.
   #
   def print_invoice
-    @headerRow = InvoiceHeader.find(params[:id])
+    @headerRow = InvoiceHeader.find(params[:invoice_id])
     @bodyRows = @headerRow.invoice_lines(:order => 'position')
     unless @headerRow
       set_flash('<e>No invoice found to print.')
-      redirect_to :action => 'index'
+      redirect_to :action => 'manual_control'
     else
       @copiesInfo = case (params[:invoiceCopies] rescue nil) || 'R'
       when 'N' : [["Account File", :alpha],["Numerical File", :numerical],["Customer's Copy", :customer]]

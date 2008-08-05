@@ -2,17 +2,58 @@ class InvoiceHeader < ActiveRecord::Base
   
   has_many :invoice_lines, :order => :position
 
-  def self.check_instructions(pathName)
-    result = []
+  # return the text for the active state of the toggle.
+  #
+  def self.fetch_active_state(pathName, toggle = false)
+    result = issue = nil
+    keyFile = 'ror_yes'
     unless File.directory?(pathName) : issue = "<e>\"#{pathName}\" is not a directory path."
     else
       Dir.chdir(pathName)
-      result = Dir['*.ror']
-      issue = result.empty? ? '<w>No invoices pending' : "<i>#{result.size} invoice(s) found."
+      result = File.exist?(keyFile)
+      # if we are to toggle it, then do so.
+      if toggle
+        if result  # remove the file named 'ror_yes'.
+          File.delete(keyFile)
+        else  # create a nominal file named 'ror_yes'.
+          f = File.new(keyFile, 'w')
+          f << DateTime.now
+          f.close
+        end
+        result = !result
+      end # of whether toggling the active state.
+      # restore the original state.
       Dir.chdir(RAILS_ROOT) # don't forget this little gem.
     end
-    return issue, result.empty? ? nil : result.insert(0, '')
-  end # of method "check_instructions".
+    return issue, result ? 'Turn Printing OFF' : 'Turn Printing ON'
+  end # end of method "fetch_active_state".
+  
+#  def self.check_instructions(pathName)
+#    result = []
+#    unless File.directory?(pathName) : issue = "<e>\"#{pathName}\" is not a directory path."
+#    else
+#      Dir.chdir(pathName)
+#      result = Dir['*.ror']
+#      issue = result.empty? ? '<w>No invoices pending' : "<i>#{result.size} invoice(s) found."
+#      Dir.chdir(RAILS_ROOT) # don't forget this little gem.
+#    end
+#    return issue, result
+#  end # of method "check_instructions".
+  
+
+  def self.get_manual_list
+    result = self.find(:all, :order => 'invoice DESC', :limit => 10)
+    unless result.empty?
+      result = result.collect {|ih| [ih.invoice, ih.id]}
+    end
+    issue = case result.size
+    when 0 : "No invoices are available for reprinting."
+    when 1 : "Select the last invoice."
+    else
+      "Select from the last #{result.size} invoice(s)."
+    end
+    return issue, result
+  end
   
   def self.load_dataflex_invoice(fileNamr)
     f = File.new( fileNamr, 'r' ) rescue nil

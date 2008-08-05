@@ -1,0 +1,46 @@
+body {
+  background-color: #bbbbbb;
+}
+#header {
+  font-size: 1.3em;
+}
+.banner {
+  text-align: center;
+}
+h1 {
+  color: #01b800;
+}
+h3 {
+  color: #0003d7;
+}
+#copy-control {
+  width: 100%;
+  text-align: center;
+}
+fieldset {
+  width: 400px;
+}
+li {
+  list-style-type: none;
+  text-align: left;
+}
+.alpha {
+  color: blue;
+  font-weight: 600;
+  /*  background-color: #c8c8ff; */
+}
+.numerical {
+  color: #a89f0b;
+  font-weight: 600;
+  /*  background-color: #fffaaa; */
+}
+.customer {
+  color: red;
+  font-weight: 600;
+  /*  background-color: #ffc8c8; */
+}
+.packing {
+  color: black;
+  font-weight: 600;
+  /*  background-color: #c8c8c8; */
+}

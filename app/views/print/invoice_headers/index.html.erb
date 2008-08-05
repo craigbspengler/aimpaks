@@ -1,25 +1,19 @@
-<form action="<%= url_for(:action => 'check_instructions') %>" method="POST">
-      <br/>
-  <h3>
-    Use Directory Path:#&nbsp;
-    <%= text_field_tag( :pathName, 'q:/ror', :size => '20' ) %>
-  </h3>
+<form action="<%= url_for(:action => 'check_main') %>" method="POST">
   <br/>
   <h3>
-    Process Invoice #:&nbsp;
-    <%= select_tag( :fileName, file_name_options() ) %>
+    Use Directory Path:&nbsp;
+    <%= text_field_tag(:pathName, session[:directory], :size => '20' ) %>
   </h3>
-  <%= radio_button_tag( :invoiceCopies, 'N' ) -%> Normal Copies (Account, Numerical, Customer)<br/>
-  <%= radio_button_tag( :invoiceCopies, 'D' ) -%> Normal Set plus the Delivery Note<br/>
-  <%= radio_button_tag( :invoiceCopies, 'R', true ) -%> Reprint Invoice<br/>
-  <%= radio_button_tag( :invoiceCopies, 'P' ) -%> Delivery Note Only<br/>
   <br/>
   <div style="text-align: center;">
-    <%= submit_tag('Go') -%>
+    <%= submit_tag('Change Directory Path') -%>
   </div>
   <div style="text-align: center;">
     <h4>
-      <%= link_to ('Refresh', :action => 'refresh') -%>
+      <%= link_to(session[:active], :action => 'toggle_active') -%>
+    </h4>
+    <h4>
+      <%= link_to('Manual Reprints', {:action => 'manual_control'}, {:type => 'button'}) -%>
     </h4>
   </div>
 </form>

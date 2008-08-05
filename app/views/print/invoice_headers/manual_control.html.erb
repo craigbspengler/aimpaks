@@ -1,0 +1,29 @@
+<form action="<%= url_for(:action => 'print_invoice', :medium => 'pdf_invoice') %>" method="POST">
+  <br/>
+  <h3>
+    Reprint Invoice:&nbsp;
+    <%= select_tag(:invoice_id, options_for_select(@invoices)) %>
+  </h3>
+  <div id="copy-control">
+    <fieldset><legend>Copies Control</legend>
+      <ul>
+        <li><%= radio_button_tag( :invoiceCopies, 'N' ) -%> Normal Copies (<span class="alpha">Account</span>, <span class="numerical">Numerical</span>, <span class="customer">Customer</span>)</li>
+        <li><%= radio_button_tag( :invoiceCopies, 'D' ) -%> Normal Set plus the <span class="packing">Delivery Note</span></li>
+        <li class="customer"><%= radio_button_tag( :invoiceCopies, 'R', true ) -%> Reprint Invoice</li>
+        <li class="packing"><%= radio_button_tag( :invoiceCopies, 'P' ) -%> Delivery Note Only</li>
+      </ul>
+    </fieldset>
+  </div>
+  <br/>
+  <div style="text-align: center;">
+    <%= submit_tag('Go') -%>
+  </div>
+  <div style="text-align: center;">
+    <h4>
+      <%= link_to('Refresh', :action => 'refresh') -%>
+    </h4>
+    <h4>
+      <%= link_to('Automatic Operation', :action => 'index') -%>
+    </h4>
+  </div>
+</form>

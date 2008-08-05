@@ -4,13 +4,51 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <title>PRINT INVOICE</title>
+    <%= stylesheet_link_tag 'main', :media => 'all' %>
+    <%= javascript_include_tag :defaults  %>
+    <script language="JavaScript">
+      // please keep these lines on when you copy the source
+      // made by: Nicolas - http://www.javascript-page.com
+      // modified by Berube Consulting - http://berubeconsulting.com/
+      var clockID = 0;
+      
+      function UpdateClock() {
+        if(clockID) {
+          clearTimeout(clockID);
+          clockID  = 0;
+        }
+        var clockDiv = document.getElementById('theClock');
+        var tDate = new Date();
+        var seconds = tDate.getSeconds();
+        var minutes = tDate.getMinutes();
+        var hours = tDate.getHours();
+        clockDiv.innerHTML =         ((hours < 10) ? "0" : "") + hours  + ":" + 
+        ((minutes < 10) ? "0" : "") + minutes + ":"  +
+        ((seconds < 10) ? "0" : "") + seconds;
+        clockID = setTimeout("UpdateClock()", 1000);
+      }
+      function StartClock() {
+        clockID = setTimeout("UpdateClock()", 500);
+      }
+      function KillClock() {
+        if(clockID) {
+          clearTimeout(clockID);
+          clockID  = 0;
+        }
+      }
+      StartClock();
+    </script>
   </head>
   <body onload="setFocusFirstField()">
-    <div id="header">
-      <%= messages() -%>
-    </div>
-    <div id="content">
-      <%= @content_for_layout -%>
+    <div class="banner">
+      <h1>General Hardwoods & Millwork, Inc.</h1>
+      <h3><span><%= DateTime.now.strftime(DateFlorid) -%>&nbsp;&nbsp;</span><span id="theClock">HH:MM:SS</span></h3>
+      <div class="customer" id="header">
+        <%= messages() -%>
+      </div>
+      <div id="content">
+        <%= @content_for_layout -%>
+      </div>
     </div>
   </body>
 </html>
