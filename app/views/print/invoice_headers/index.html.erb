@@ -1,13 +1,11 @@
-<form action="<%= url_for(:action => 'check_main') %>" method="POST">
+<form action="<%= url_for(:action => 'vet_directory') %>" method="POST">
+  <%= periodically_call_remote :url => {:action => 'poll_for_data'} -%>
   <br/>
   <h3>
-    Use Directory Path:&nbsp;
-    <%= text_field_tag(:pathName, session[:directory], :size => '20' ) %>
+    <span>Use Directory Path:&nbsp;<%= text_field_tag(:pathName, session[:directory], :size => '20' ) %></span>
+    <span><%= submit_tag('Set New Path') -%></span>
   </h3>
   <br/>
-  <div style="text-align: center;">
-    <%= submit_tag('Change Directory Path') -%>
-  </div>
   <div style="text-align: center;">
     <h4>
       <%= link_to(session[:active], :action => 'toggle_active') -%>
@@ -16,4 +14,5 @@
       <%= link_to('Manual Reprints', {:action => 'manual_control'}, {:type => 'button'}) -%>
     </h4>
   </div>
+  <br/>
 </form>

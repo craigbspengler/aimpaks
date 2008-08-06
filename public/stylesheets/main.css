@@ -1,7 +1,8 @@
 body {
-  background-color: #bbbbbb;
+  height: 100%;
+  background-color: #ffffff;
 }
-#header {
+#flash-messages {
   font-size: 1.3em;
 }
 .banner {

@@ -2,6 +2,20 @@ class InvoiceHeader < ActiveRecord::Base
   
   has_many :invoice_lines, :order => :position
 
+  # Return the default directory for this site: we are going to test for (first) r:/ror which is GHW, then q:/ror (AIM).
+  # This is only used at fire-up time.
+  #
+  def self.find_default_directory
+    result = ''
+    %w{ r:/ror q:/ror }.each do |d|
+      if File.directory?(d)
+        result = d
+        break
+      end
+    end
+    return result
+  end # of method "find_default_directory".
+  
   # return the text for the active state of the toggle.
   #
   def self.fetch_active_state(pathName, toggle = false)
@@ -28,17 +42,25 @@ class InvoiceHeader < ActiveRecord::Base
     return issue, result ? 'Turn Printing OFF' : 'Turn Printing ON'
   end # end of method "fetch_active_state".
   
-#  def self.check_instructions(pathName)
-#    result = []
-#    unless File.directory?(pathName) : issue = "<e>\"#{pathName}\" is not a directory path."
-#    else
-#      Dir.chdir(pathName)
-#      result = Dir['*.ror']
-#      issue = result.empty? ? '<w>No invoices pending' : "<i>#{result.size} invoice(s) found."
-#      Dir.chdir(RAILS_ROOT) # don't forget this little gem.
-#    end
-#    return issue, result
-#  end # of method "check_instructions".
+  def self.process_next_raw_file(activeFlag, pathName)
+    issue = nil
+    headerId = nil
+    copies = nil
+    if activeFlag.include?('ON') : issue = ''  # remember: inverted.
+    elsif pathName.nil? : issue = "<e>No directory path is specified."
+    elsif !File.directory?(pathName) : issue = "<e>\"#{pathName}\" is not a directory path."
+    else
+      Dir.chdir(pathName)
+      fileNames = Dir['*.ror']
+      if fileNames.empty? : issue = '<w>No invoices pending'
+      else
+        fileNames.sort!
+        issue, headerId, copies = load_dataflex_invoice(fileNames.first)
+      end
+      Dir.chdir(RAILS_ROOT) # don't forget this little gem.
+    end # of whether printing is 'off'.
+    return issue, headerId, copies
+  end # of method "process_next_raw_file".
   
 
   def self.get_manual_list
@@ -56,6 +78,7 @@ class InvoiceHeader < ActiveRecord::Base
   end
   
   def self.load_dataflex_invoice(fileNamr)
+    copies = 'N'
     f = File.new( fileNamr, 'r' ) rescue nil
     if f.nil? : issue = "<e>Could not open source file: #{fileNamr}"
     else
@@ -116,11 +139,12 @@ class InvoiceHeader < ActiveRecord::Base
             end
           end # of saving every line item.
         end # of loading each mode.
-        issue = "<i>Loaded."
+        issue = nil   # (loaded successfully)
         f.close unless f.closed?
       end # of empty file.
     end #of whether there is any downloaded data at all.
-    return issue, headerSaved.nil? ? nil : headerSaved.id
+    headerId = headerSaved.nil? ? nil : headerSaved.id
+    return issue, headerId, copies
   end # of method "load_dataflex_invoice".
 
   def self.company_data(formatCode)

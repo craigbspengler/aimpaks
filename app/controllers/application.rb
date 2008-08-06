@@ -22,7 +22,7 @@ class ApplicationController < ActionController::Base
   #
   def set_flash(message)
     worstResult = nil
-    if message
+    if message && !message.empty?
       mList = message.is_a?(Array) ? message : message.split(';')
       mList.each do |m|
         if m

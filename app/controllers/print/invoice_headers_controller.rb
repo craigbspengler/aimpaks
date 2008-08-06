@@ -2,14 +2,18 @@ class Print::InvoiceHeadersController < ApplicationController
   
   #  active_scaffold
 
+  #-------------------------------------------------------------------------------------------------------------
+  # Automatic (polled) operation: js loops every (10) seconds to see if any new *.ror file is present.
+  # Use effects to show that the poll took place.
+  #-------------------------------------------------------------------------------------------------------------
+
   def index
-    session[:directory] = session[:directory] || 'q:/ror'
-    session[:fileNamesList] = session[:fileNamesList] || ''
+    session[:directory] = session[:directory] || InvoiceHeader.find_default_directory
     issue, session[:active] = InvoiceHeader.fetch_active_state(session[:directory])
     set_flash issue
   end # of action "index".
 
-  def check_main
+  def vet_directory
     session[:directory] = params[:pathName]
     redirect_to :action => 'index'
   end # of action "check_main".
@@ -19,6 +23,25 @@ class Print::InvoiceHeadersController < ApplicationController
     set_flash issue
     redirect_to :action => 'index'
   end
+  
+  def poll_for_data
+    issue, headerId, copies = InvoiceHeader.process_next_raw_file(session[:active], session[:directory])
+    if issue.nil?
+      redirect_to :action => 'print_invoice', :invoice_id => headerId, :medium => 'pdf_invoice', :invoiceCopies => copies
+    else
+      # report that we cycled with the scripaculous effect.
+      set_flash issue
+      render :update do |page|
+        page.replace_html 'flash-messages', :partial => 'flash_messages'
+        page.visual_effect :highlight, 'whole-page'  # , :startcolor => "'#ffff99'", :endcolor => "'#bbbbbb'", :restorecolor => "'#bbbbbb'"
+      end # of reporting cycle.
+    end # of whether found/printed or not.
+  end # of action "check_instructions".
+
+  #-------------------------------------------------------------------------------------------------------------
+  # Manual reprint: for any invoice already transferred, the last ten are displayed to give opportunity to
+  # either reprint or choose addition packing list, etc.
+  #-------------------------------------------------------------------------------------------------------------
   
   def manual_control
     issue, @invoices = InvoiceHeader.get_manual_list
@@ -30,31 +53,17 @@ class Print::InvoiceHeadersController < ApplicationController
     redirect_to :action => 'manual_control'
   end
   
-  def check_instructions
-    if params[:fileName].nil? || params[:fileName].empty?
-      issue, fileNamesList = InvoiceHeader.check_instructions(params[:pathName])
-      set_flash(issue)
-      session[:fileNamesList] = fileNamesList if fileNamesList
-      redirect_to :action => 'manual_control'
-    else
-      fileNamr = File.join(params[:pathName], params[:fileName])
-      issue, headerRow = InvoiceHeader.load_dataflex_invoice(fileNamr)
-      if headerRow
-        redirect_to :action => 'print_invoice', :id => headerRow, :medium => 'pdf_invoice', :invoiceCopies => params[:invoiceCopies]
-      else
-        set_flash(issue)
-        redirect_to :action => 'manual_control'
-      end
-    end
-  end # of action "check_instructions".
-  
-  def load_invoice
-    issue = InvoiceHeader.load_dataflex_invoice(params[:fileNamr])
-    set_flash issue
-    redirect_to :action => 'manual_control'
-  end # of action "load_invoice".
+  #  def load_invoice
+  #    issue = InvoiceHeader.load_dataflex_invoice(params[:fileNamr])
+  #    set_flash issue
+  #    redirect_to :action => 'manual_control'
+  #  end # of action "load_invoice".
 
-  # Print out the invoice from the dataFLEX print intermediate file.
+  #-------------------------------------------------------------------------------------------------------------
+  # This section holds action(s) used by both the automatic and manual operating modes.
+  #-------------------------------------------------------------------------------------------------------------
+  
+  # Print out the invoice from the MySQL-extant data.
   #
   def print_invoice
     @headerRow = InvoiceHeader.find(params[:invoice_id])

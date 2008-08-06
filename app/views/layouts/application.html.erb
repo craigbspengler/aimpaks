@@ -40,11 +40,11 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     </script>
   </head>
   <body onload="setFocusFirstField()">
-    <div class="banner">
+    <div class="banner" id="whole-page">
       <h1>General Hardwoods & Millwork, Inc.</h1>
-      <h3><span><%= DateTime.now.strftime(DateFlorid) -%>&nbsp;&nbsp;</span><span id="theClock">HH:MM:SS</span></h3>
-      <div class="customer" id="header">
-        <%= messages() -%>
+      <h3><span><%= DateTime.now.strftime(DateFlorid) -%>&nbsp;&nbsp;</span><span id="theClock">H:M:S</span></h3>
+      <div class="customer" id="flash-messages">
+        <%= render :partial => 'flash_messages' -%>
       </div>
       <div id="content">
         <%= @content_for_layout -%>

@@ -1,7 +1,7 @@
 # Methods added to this helper will be available to all templates in the application.
 module ApplicationHelper
   
-  def messages
+  def flash_messages
     result = []
     for name in [:error, :warning, :info]
       if flash[name]
