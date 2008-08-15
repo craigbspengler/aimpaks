@@ -44,7 +44,7 @@ class ApplicationController < ActionController::Base
   end # of method "set_flash".
 
   def render_html_or_redirect_to_pdf
-    if params[:medium].include?('pdf_')
+    if @reportInfo[:layout].include?('pdf_')
       pdf_file = create_pdf
       redirect_to pdf_file.gsub('public', '')
     else

@@ -11,6 +11,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
       // made by: Nicolas - http://www.javascript-page.com
       // modified by Berube Consulting - http://berubeconsulting.com/
       var clockID = 0;
+      var pcrActive = false;
       
       function UpdateClock() {
         if(clockID) {
@@ -22,7 +23,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
         var seconds = tDate.getSeconds();
         var minutes = tDate.getMinutes();
         var hours = tDate.getHours();
-        clockDiv.innerHTML =         ((hours < 10) ? "0" : "") + hours  + ":" + 
+        clockDiv.innerHTML = ((hours < 10) ? "0" : "") + hours  + ":" + 
         ((minutes < 10) ? "0" : "") + minutes + ":"  +
         ((seconds < 10) ? "0" : "") + seconds;
         clockID = setTimeout("UpdateClock()", 1000);
@@ -42,7 +43,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
   <body onload="setFocusFirstField()">
     <div class="banner" id="whole-page">
       <h1>General Hardwoods & Millwork, Inc.</h1>
-      <h3><span><%= DateTime.now.strftime(DateFlorid) -%>&nbsp;&nbsp;</span><span id="theClock">H:M:S</span></h3>
+      <h3><span><%= DateTime.now.strftime(DateFlorid) -%>&nbsp;&nbsp;</span><span id="theClock">H:M:S [X]</span></h3>
       <div class="customer" id="flash-messages">
         <%= render :partial => 'flash_messages' -%>
       </div>

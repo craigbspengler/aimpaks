@@ -1,5 +1,6 @@
-<form action="<%= url_for(:action => 'vet_directory') %>" method="POST">
-  <%= periodically_call_remote :url => {:action => 'poll_for_data'} -%>
+<form id="auto_control" action="<%= url_for(:action => 'auto_submit') %>" method="POST">
+  <script type="text/javascript">pcrActive = true;</script>
+  <%= periodically_call_remote( :condition => "pcrActive == true", :before => "pcrActive = false;", :url => { :action => "poll_for_data" }) -%>
   <br/>
   <h3>
     <span>Use Directory Path:&nbsp;<%= text_field_tag(:pathName, session[:directory], :size => '20' ) %></span>
@@ -8,10 +9,10 @@
   <br/>
   <div style="text-align: center;">
     <h4>
-      <%= link_to(session[:active], :action => 'toggle_active') -%>
+      <%= submit_tag(session[:active]) -%>
     </h4>
     <h4>
-      <%= link_to('Manual Reprints', {:action => 'manual_control'}, {:type => 'button'}) -%>
+      <%= submit_tag('Manual Reprints') -%>
     </h4>
   </div>
   <br/>

@@ -13,27 +13,29 @@ class Print::InvoiceHeadersController < ApplicationController
     set_flash issue
   end # of action "index".
 
-  def vet_directory
-    session[:directory] = params[:pathName]
-    redirect_to :action => 'index'
-  end # of action "check_main".
-  
-  def toggle_active
-    issue, session[:active] = InvoiceHeader.fetch_active_state(session[:directory], true)
-    set_flash issue
-    redirect_to :action => 'index'
+  def auto_submit
+    if params[:commit].eql?('Set New Path')
+      session[:directory] = params[:pathName]
+      redirect_to :action => 'index' and return
+    elsif params[:commit].include?('Turn Printing')
+      issue, session[:active] = InvoiceHeader.fetch_active_state(session[:directory], true)
+      redirect_to :action => 'index' and return
+    else
+      redirect_to :action => 'manual_control'
+    end
   end
   
   def poll_for_data
     issue, headerId, copies = InvoiceHeader.process_next_raw_file(session[:active], session[:directory])
     if issue.nil?
-      redirect_to :action => 'print_invoice', :invoice_id => headerId, :medium => 'pdf_invoice', :invoiceCopies => copies
+      redirect_to(:action => 'print_invoice', :invoice_id => headerId, :medium => 'pdf_invoice', :invoiceCopies => copies) and return
     else
       # report that we cycled with the scripaculous effect.
       set_flash issue
       render :update do |page|
         page.replace_html 'flash-messages', :partial => 'flash_messages'
         page.visual_effect :highlight, 'whole-page'  # , :startcolor => "'#ffff99'", :endcolor => "'#bbbbbb'", :restorecolor => "'#bbbbbb'"
+        page.assign 'pcrActive', true
       end # of reporting cycle.
     end # of whether found/printed or not.
   end # of action "check_instructions".
@@ -42,15 +44,20 @@ class Print::InvoiceHeadersController < ApplicationController
   # Manual reprint: for any invoice already transferred, the last ten are displayed to give opportunity to
   # either reprint or choose addition packing list, etc.
   #-------------------------------------------------------------------------------------------------------------
-  
   def manual_control
     issue, @invoices = InvoiceHeader.get_manual_list
     set_flash issue
   end
-  
-  def refresh
-    session[:fileNamesList] = ''
-    redirect_to :action => 'manual_control'
+
+  def manual_submit
+    if params[:commit].eql?('Refresh')
+      session[:fileNamesList] = ''
+      redirect_to :action => 'manual_control' and return
+    elsif params[:commit].eql?('Automatic Operation')
+      redirect_to :action => 'index' and return
+    else
+      redirect_to :action => 'print_invoice', :invoice_id => params[:invoice_id], :invoiceCopies => params[:invoiceCopies]
+    end
   end
   
   #  def load_invoice
@@ -70,7 +77,7 @@ class Print::InvoiceHeadersController < ApplicationController
     @bodyRows = @headerRow.invoice_lines(:order => 'position')
     unless @headerRow
       set_flash('<e>No invoice found to print.')
-      redirect_to :action => 'manual_control'
+      redirect_to(:action => 'manual_control') and return
     else
       @copiesInfo = case (params[:invoiceCopies] rescue nil) || 'R'
       when 'N' : [["Account File", :alpha],["Numerical File", :numerical],["Customer's Copy", :customer]]
@@ -83,7 +90,7 @@ class Print::InvoiceHeadersController < ApplicationController
         :title => 'Invoice',
         :fileTag => @headerRow.invoice.to_s,
         :currentUser => {:id => '1'},
-        :layout => params[:medium],
+        :layout => 'pdf_invoice',
         :cssFile => 'ghw_invoice',
         #        :cssFile => "#{@headerRow[:format_code].downcase.strip}_invoice"
         :company => InvoiceHeader.company_data(@headerRow.format_code)
