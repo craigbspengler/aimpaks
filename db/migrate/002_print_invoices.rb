@@ -4,7 +4,8 @@ class PrintInvoices < ActiveRecord::Migration
     
     create_table :invoice_headers, :force => true do |t|
       t.timestamps
-      t.column :format_code, :string, :limit => 50, :default => ''
+      t.column :format_code, :string, :limit => 50, :default => 'GHW'
+      t.column :invoice_mode, :string, :limit => 1, :default => 'N'
       t.column :document_title, :string, :limit => 50, :default => ''
       t.column :document_number, :string, :limit => 50, :default => ''
       t.column :proforma_alert, :string, :limit => 50, :default => ''

@@ -55,7 +55,10 @@ class InvoiceHeader < ActiveRecord::Base
       if fileNames.empty? : issue = '<w>No invoices pending'
       else
         fileNames.sort!
-        issue, headerId, copies = load_dataflex_invoice(fileNames.first)
+        targetFileName = fileNames.first
+        issue, headerId, copies = load_dataflex_invoice(targetFileName)
+        # rename the file so it's not processed again.
+        File.rename(targetFileName, targetFileName.gsub('ror', 'ok')) if issue.nil?
       end
       Dir.chdir(RAILS_ROOT) # don't forget this little gem.
     end # of whether printing is 'off'.
@@ -64,7 +67,7 @@ class InvoiceHeader < ActiveRecord::Base
   
 
   def self.get_manual_list
-    result = self.find(:all, :order => 'invoice DESC', :limit => 10)
+    result = self.find(:all, :order => 'invoice DESC', :limit => 25)
     unless result.empty?
       result = result.collect {|ih| [ih.invoice, ih.id]}
     end

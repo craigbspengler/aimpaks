@@ -1,0 +1,47 @@
+--header
+format-code: ghw
+invoice-mode: N
+document-title: INVOICE
+document-number: 219809 
+proforma-alert: 
+bill-name: SUPER YACHT CARPENTRY
+bill-add1: 2001 SW. 20TH STREET
+bill-add2: ST.118                            
+bill-add3: Fort Lauderdale, FL 33315         
+ship-name: SUPER YACHT CARPENTRY
+ship-add1: 2001 SW. 20TH STREET
+ship-add2: ST.118                            
+ship-add3: Fort Lauderdale, FL 33315         
+invoice: 219809
+date-shipped: 07/01/2008
+reference: ARGYLE
+workorder: _________________
+date-ordered: 07/01/2008
+terms: NET 15 DAYS
+account: SUP200
+ship-via: NONE
+taken-by: BR
+page: 1
+--part
+part-ordered: 1.00
+part-shipped: 1.00
+part-number: DEFTSEMIGLOSSQT
+part-sku-um: 101235
+part-description: DEFT SEMIGLOSS WD FIN QUART
+part-um: EA
+part-unit-price: 15.77
+part-discount: 0.00
+part-net-price: 15.77
+part-extension: 15.77
+--total
+subtotal-material: 15.77
+tax-number: 16-8012824563-6
+invoice-total: 15.77
+subtotal-labor: 0.00
+tax-amount: 0.00
+deposit-type: 
+total-deposit-amount: 0.00
+subtotal-invoice: 15.77
+subtotal-shipping: 0.00
+balance-due: 15.77
+footnote: I have received all materials and the work has been done to specifications requested.

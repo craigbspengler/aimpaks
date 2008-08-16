@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(:version => 2) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "format_code",          :limit => 50,                                 :default => ""
+    t.string   "invoice_mode",         :limit => 1,                                  :default => "N"
     t.string   "document_title",       :limit => 50,                                 :default => ""
     t.string   "document_number",      :limit => 50,                                 :default => ""
     t.string   "proforma_alert",       :limit => 50,                                 :default => ""
