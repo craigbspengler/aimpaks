@@ -28,7 +28,7 @@ class Print::InvoiceHeadersController < ApplicationController
   def poll_for_data
     issue, headerId, copies = InvoiceHeader.process_next_raw_file(session[:active], session[:directory])
     if issue.nil?
-      redirect_to(:action => 'print_invoice', :invoice_id => headerId, :medium => 'pdf_invoice', :invoiceCopies => copies) and return
+      redirect_to(:action => 'print_invoice', :invoice_id => headerId, :invoiceCopies => copies)
     else
       # report that we cycled with the scripaculous effect.
       set_flash issue
@@ -90,7 +90,7 @@ class Print::InvoiceHeadersController < ApplicationController
         :title => 'Invoice',
         :fileTag => @headerRow.invoice.to_s,
         :currentUser => {:id => '1'},
-        :layout => 'pdf_invoice',
+        :layout => 'pdf_invoice',   # this usually is passed as param{:medium]
         :cssFile => 'ghw_invoice',
         #        :cssFile => "#{@headerRow[:format_code].downcase.strip}_invoice"
         :company => InvoiceHeader.company_data(@headerRow.format_code)
