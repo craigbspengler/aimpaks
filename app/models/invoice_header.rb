@@ -58,7 +58,7 @@ class InvoiceHeader < ActiveRecord::Base
         targetFileName = fileNames.first
         issue, headerId, copies = load_dataflex_invoice(targetFileName)
         # rename the file so it's not processed again.
-        File.rename(targetFileName, targetFileName.gsub('ror', 'ok')) if issue.nil?
+        File.rename(targetFileName, targetFileName.gsub('ROR', 'OK')) if issue.nil?
       end
       Dir.chdir(RAILS_ROOT) # don't forget this little gem.
     end # of whether printing is 'off'.

@@ -28,14 +28,16 @@ class Print::InvoiceHeadersController < ApplicationController
   def poll_for_data
     issue, headerId, copies = InvoiceHeader.process_next_raw_file(session[:active], session[:directory])
     if issue.nil?
-      redirect_to(:action => 'print_invoice', :invoice_id => headerId, :invoiceCopies => copies)
+      render :update do |page|
+        page.redirect_to url_for(:action => 'print_invoice', :invoice_id => headerId, :invoiceCopies => copies).gsub('&amp;', '&')
+      end
     else
-      # report that we cycled with the scripaculous effect.
+      # report that we cycled with the scriptaculous effect.
       set_flash issue
       render :update do |page|
-        page.replace_html 'flash-messages', :partial => 'flash_messages'
-        page.visual_effect :highlight, 'whole-page'  # , :startcolor => "'#ffff99'", :endcolor => "'#bbbbbb'", :restorecolor => "'#bbbbbb'"
         page.assign 'pcrActive', true
+        page.replace_html 'flash-messages', :partial => 'flash_messages'
+        page.visual_effect :highlight, 'whole-page' # , :startcolor => "'#ffff99'"  # , :startcolor => "'#99ff99'"
       end # of reporting cycle.
     end # of whether found/printed or not.
   end # of action "check_instructions".
