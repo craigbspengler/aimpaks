@@ -1,5 +1,6 @@
-log/*.log
-public/dataFLEX/*.*
-public/tmp/*.*
+*.bak
+log/
+public/dataFLEX/
+public/tmp/
 tmp/**/*
 
